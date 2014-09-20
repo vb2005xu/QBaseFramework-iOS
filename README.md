@@ -1,8 +1,8 @@
-# ios base framework
+# Q-iOS base framework
 
 ![design](doc/images/design.png)
 
-## 架构
+## Develop mode
 
 ### native
 
