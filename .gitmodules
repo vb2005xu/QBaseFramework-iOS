@@ -1,0 +1,30 @@
+[submodule "src/vendor/AFNetworking"]
+	path = src/vendor/AFNetworking
+	url = git@github.com:AFNetworking/AFNetworking.git
+[submodule "src/vendor/JSONModel"]
+	path = src/vendor/JSONModel
+	url = git@github.com:icanzilb/JSONModel.git
+[submodule "src/vendor/JSONKit"]
+	path = src/vendor/JSONKit
+	url = git@github.com:johnezang/JSONKit.git
+[submodule "src/vendor/fmdb"]
+	path = src/vendor/fmdb
+	url = git@github.com:ccgus/fmdb.git
+[submodule "src/vendor/TMCache"]
+	path = src/vendor/TMCache
+	url = git@github.com:tumblr/TMCache.git
+[submodule "src/vendor/EGOCache"]
+	path = src/vendor/EGOCache
+	url = git@github.com:enormego/EGOCache.git
+[submodule "src/vendor/SDWebImage"]
+	path = src/vendor/SDWebImage
+	url = git@github.com:rs/SDWebImage.git
+[submodule "src/vendor/FastImageCache"]
+	path = src/vendor/FastImageCache
+	url = git@github.com:path/FastImageCache.git
+[submodule "src/vendor/KIChameleonView"]
+	path = src/vendor/KIChameleonView
+	url = git@github.com:kaiinui/KIChameleonView.git
+[submodule "src/vendor/FLAnimatedImage"]
+	path = src/vendor/FLAnimatedImage
+	url = git@github.com:Flipboard/FLAnimatedImage.git
