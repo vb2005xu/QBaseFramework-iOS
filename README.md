@@ -2,6 +2,16 @@
 
 ![design](doc/images/design.png)
 
+
+项目基于[iOS-Universal-Framework](https://github.com/kstenerud/iOS-Universal-Framework)，编译后生产QBaseFramework.
+
+添加QBaseFramework到新的iOS项目里即可使用。
+
+## Features
+
+- 支持iOS5+
+- 默认ARC
+
 ## Develop mode
 
 ### native
@@ -27,6 +37,10 @@ when need webview
 
 [dependency libs](doc/dependency.md)
 
+
+## 进度
+
+- [x] afnetworking
 
 ## Contributing
 
