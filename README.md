@@ -1,5 +1,7 @@
 # ios base framework
 
+![design](doc/images/design.png)
+
 ## 架构
 
 ### native
@@ -30,10 +32,13 @@ when need webview
 
 https://github.com/AFNetworking/AFNetworking
 
-### jsonmodel
+### Json Model
 
 https://github.com/icanzilb/JSONModel
 
+### JsonKit
+
+https://github.com/johnezang/JSONKit
 
 ## Cache
 
@@ -113,6 +118,14 @@ https://github.com/granoff/Lockbox
 ### Reachability
 
 https://github.com/tonymillion/Reachability
+
+### OpenUDID
+
+https://github.com/ylechelle/OpenUDID
+
+### Zip Archive
+
+https://github.com/mattconnolly/ZipArchive
 
 ## refference
 
