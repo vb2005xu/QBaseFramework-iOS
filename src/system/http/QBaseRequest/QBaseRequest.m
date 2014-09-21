@@ -9,20 +9,54 @@
 #import "QBaseRequest.h"
 
 @implementation QBaseRequest
+DEFINE_SINGLETON_FOR_CLASS(QBaseRequest)
 
-+ (void)GET:(NSString *)url params:(NSDictionary *)params complete:(QBaseRequestComplete)completeBlock
++ (void)registRequest:(QBaseRegistBlock)registBlock
 {
-
+    registBlock([QBaseRequest sharedQBaseRequest]);
 }
 
-+ (void)POST:(NSString *)url params:(NSDictionary *)params complete:(QBaseRequestComplete)completeBlock
++ (void)GET:(NSString *)url params:(NSDictionary *)params complete:(QBaseRequestCompleteBlock)completeBlock
 {
-
+    [[AFHTTPRequestOperationManager manager] GET:url
+                                      parameters:params
+                                         success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                                             
+                                             completeBlock(responseObject, nil);
+                                         }
+                                         failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                             
+                                             completeBlock(nil, error);
+                                         }];
 }
 
-+ (void)POST:(NSString *)url params:(NSDictionary *)params body:(QBaseRequestBody)bodyBlock complete:(QBaseRequestComplete)completeBlock
++ (void)POST:(NSString *)url params:(NSDictionary *)params complete:(QBaseRequestCompleteBlock)completeBlock
 {
+    [[AFHTTPRequestOperationManager manager] POST:url
+                                       parameters:params
+                                          success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                                              
+                                              completeBlock(responseObject, nil);
+                                          }
+                                          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                              
+                                              completeBlock(nil, error);
+                                          }];
+}
 
++ (void)POST:(NSString *)url params:(NSDictionary *)params body:(QBaseRequestBodyBlock)bodyBlock complete:(QBaseRequestCompleteBlock)completeBlock
+{
+    [[AFHTTPRequestOperationManager manager] POST:url
+                                       parameters:params
+                        constructingBodyWithBlock:bodyBlock
+                                          success:^(AFHTTPRequestOperation *operation, id responseObject) {
+
+                                              completeBlock(responseObject, nil);
+                                          }
+                                          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+                                              completeBlock(nil, error);
+                                          }];
 }
 
 @end

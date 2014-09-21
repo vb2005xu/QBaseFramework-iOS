@@ -7,7 +7,7 @@
 //
 
 #import "QBaseAppDelegate.h"
-#import "QBaseVendor.h"
+#import "QBaseTestModel.h"
 @implementation QBaseAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -15,9 +15,14 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     
+    NSDictionary *dict = @{
+                           @"name":@"andyJin",
+                           @"age":@"13"
+                           };
     
+    QBaseTestModel *model = [[QBaseTestModel alloc] initWithDictionary:dict error:nil];
     
-    
+    [model executeUpdate:@"CREATE TABLE IF NOT EXISTS andy(name, age)"];
     
     
     // Override point for customization after application launch.

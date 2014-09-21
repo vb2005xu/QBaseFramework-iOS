@@ -9,7 +9,7 @@
 #ifndef QBaseFramework_QBaseVendor_h
 #define QBaseFramework_QBaseVendor_h
 
-
+#import "QBasePrecompile.h"
 
 // HTTP
 #import "AFNetworking.h"
