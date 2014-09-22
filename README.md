@@ -45,9 +45,11 @@ when need webview
 
 ### v0.1.0
 
+jsonmodel 作为model核心，其他的db操作等都扩展到jsonmodel里
+
 - [ ] afnetworking
 - [ ] jsonmodel
-- [ ] fmdb(sqlite)
+- [ ] fmdb(sqlite) 
 - [ ] mvc(base class)
 - [ ] utils
 
