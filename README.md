@@ -33,6 +33,9 @@ when need webview
 分支管理 http://www.juvenxu.com/2010/11/28/a-successful-git-branching-model/
 
 
+- 开发分支是`dev`
+- 当前稳定分支是`master`
+
 ## 依赖
 
 [dependency libs](doc/dependency.md)
@@ -40,7 +43,14 @@ when need webview
 
 ## 进度
 
-- [x] afnetworking
+### v0.1.0
+
+- [ ] afnetworking
+- [ ] jsonmodel
+- [ ] fmdb(sqlite)
+- [ ] mvc(base class)
+- [ ] utils
+
 
 ## Contributing
 
