@@ -111,3 +111,4 @@ https://github.com/hailongz/vTeam
 
 https://github.com/RestKit/RestKit
 
+https://github.com/ReactiveCocoa/ReactiveCocoa
