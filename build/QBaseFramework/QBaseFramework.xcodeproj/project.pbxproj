@@ -147,6 +147,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A1C8F6C419D1268100C94571 /* QBaseVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBaseVendor.h; path = ../../src/vendor/QBaseVendor.h; sourceTree = "<group>"; };
+		A1C8F6C519D1268E00C94571 /* QBasePrecompile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBasePrecompile.h; path = ../../src/system/QBasePrecompile.h; sourceTree = "<group>"; };
+		A1C8F6C619D126AE00C94571 /* QBaseFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBaseFramework.h; path = ../../src/QBaseFramework.h; sourceTree = "<group>"; };
 		A1DC1B8219CD53D0003E102E /* QBaseFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBaseFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DC1B8519CD53D0003E102E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A1DC1B8719CD53D0003E102E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -277,15 +280,12 @@
 		A1DC214F19CD585C003E102E /* TMMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMMemoryCache.m; sourceTree = "<group>"; };
 		A1DC215719CD59D2003E102E /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = ../../src/vendor/JSONKit/JSONKit.h; sourceTree = "<group>"; };
 		A1DC215819CD59D2003E102E /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = ../../src/vendor/JSONKit/JSONKit.m; sourceTree = "<group>"; };
-		A1DC215B19CD5C43003E102E /* QBaseVendor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QBaseVendor.h; sourceTree = "<group>"; };
 		A1DC216219CD6015003E102E /* QBaseHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseHttp.h; sourceTree = "<group>"; };
 		A1DC216319CD6049003E102E /* QBaseCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseCache.h; sourceTree = "<group>"; };
 		A1DC216519CD60DE003E102E /* QBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseRequest.h; sourceTree = "<group>"; };
 		A1DC216619CD60DE003E102E /* QBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseRequest.m; sourceTree = "<group>"; };
-		A1DC216919CD6C88003E102E /* QBasePrecompile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBasePrecompile.h; sourceTree = "<group>"; };
 		A1DC217219CD7BEE003E102E /* QBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseModel.h; sourceTree = "<group>"; };
 		A1DC217319CD7BEE003E102E /* QBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseModel.m; sourceTree = "<group>"; };
-		A1DC217619CD7C4E003E102E /* QBaseFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseFramework.h; sourceTree = "<group>"; };
 		A1DC217719CD7C91003E102E /* QBaseSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseSystem.h; sourceTree = "<group>"; };
 		A1DC217819CD7CFF003E102E /* QBaseTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseTestModel.h; sourceTree = "<group>"; };
 		A1DC217919CD7CFF003E102E /* QBaseTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseTestModel.m; sourceTree = "<group>"; };
@@ -395,7 +395,7 @@
 		A1DC201E19CD562C003E102E /* vendor */ = {
 			isa = PBXGroup;
 			children = (
-				A1DC215B19CD5C43003E102E /* QBaseVendor.h */,
+				A1C8F6C419D1268100C94571 /* QBaseVendor.h */,
 				A1DC215619CD59BB003E102E /* JSONKit */,
 				A1DC214919CD585C003E102E /* TMCache */,
 				A1DC210719CD584E003E102E /* SDWebImage */,
@@ -627,8 +627,8 @@
 		A1DC215C19CD5E1E003E102E /* src */ = {
 			isa = PBXGroup;
 			children = (
-				A1DC216919CD6C88003E102E /* QBasePrecompile.h */,
-				A1DC217619CD7C4E003E102E /* QBaseFramework.h */,
+				A1C8F6C519D1268E00C94571 /* QBasePrecompile.h */,
+				A1C8F6C619D126AE00C94571 /* QBaseFramework.h */,
 				A1DC215D19CD5E99003E102E /* system */,
 				A1DC201E19CD562C003E102E /* vendor */,
 			);
@@ -1116,6 +1116,7 @@
 				A1DC1BB019CD53D0003E102E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1DC1BB119CD53D0003E102E /* Build configuration list for PBXNativeTarget "QBaseFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -1124,6 +1125,7 @@
 				A1DC1BB319CD53D0003E102E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
