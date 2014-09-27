@@ -9,18 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @class QBaseRequest;
-typedef void (^QBaseRegistBlock) (QBaseRequest *request);
 typedef void (^QBaseRequestBodyBlock) (id<AFMultipartFormData> formData);
 typedef void (^QBaseRequestCompleteBlock) ( id result, NSError *err);
 
 @interface QBaseRequest : AFHTTPRequestOperationManager
-
-/**
- *  注册请求参数
- *
- *  @param registBlock 注册参数
- */
-+ (void)registRequest:(QBaseRegistBlock)registBlock;
 
 /**
  *  GET请求
@@ -29,7 +21,7 @@ typedef void (^QBaseRequestCompleteBlock) ( id result, NSError *err);
  *  @param params        请求参数
  *  @param completeBlock 请求完成回调
  */
-+ (void)GET:(NSString *)url
+- (void)GET:(NSString *)url
      params:(NSDictionary *)params
    complete:(QBaseRequestCompleteBlock)completeBlock;
 
@@ -40,7 +32,7 @@ typedef void (^QBaseRequestCompleteBlock) ( id result, NSError *err);
  *  @param params        请求参数
  *  @param completeBlock 请求完成回调
  */
-+ (void)POST:(NSString *)url
+- (void)POST:(NSString *)url
       params:(NSDictionary *)params
     complete:(QBaseRequestCompleteBlock)completeBlock;
 
@@ -52,7 +44,7 @@ typedef void (^QBaseRequestCompleteBlock) ( id result, NSError *err);
  *  @param bodyBlock     请求Body设置
  *  @param completeBlock 请求完成回调
  */
-+ (void)POST:(NSString *)url
+- (void)POST:(NSString *)url
       params:(NSDictionary *)params
         body:(QBaseRequestBodyBlock)bodyBlock
     complete:(QBaseRequestCompleteBlock)completeBlock;

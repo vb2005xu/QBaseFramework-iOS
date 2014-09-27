@@ -10,4 +10,10 @@
 
 @interface QBaseTestModel : QBaseModel
 
+@property (nonatomic, assign) long meap_id;
+
+@property (nonatomic, strong) NSString *name;
+
+@property (nonatomic, assign) NSInteger age;
+
 @end

@@ -43,5 +43,18 @@ dispatch_once( &once, ^{ __singleton__ = [[__class alloc] init]; } ); \
 return __singleton__; \
 }
 
+CG_INLINE void DEBUG_NSLOG (NSString *format, ...)
+{
+    
+#if DEBUG
+    va_list args;
+    va_start(args,format);
+    if (format != nil)
+    {
+        NSLogv(format, args);
+    }
+#endif
+    
+}
 
 #endif

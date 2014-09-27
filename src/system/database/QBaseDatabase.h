@@ -8,7 +8,7 @@
 
 #import "FMDatabaseQueue.h"
 
-#define DB_PATH @"/Users/andy/Desktop/db.db"
+#define DEFAULE_DB_PATH @"/Users/andy/Desktop/data.db"
 @interface QBaseDatabase : FMDatabaseQueue
 DEFINE_SINGLETON_FOR_HEADER(QBaseDatabase)
 

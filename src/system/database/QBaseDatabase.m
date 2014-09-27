@@ -14,11 +14,11 @@
     static QBaseDatabase *instance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        instance = [[self alloc] databaseQueueWithPath:DB_PATH];
+        instance = [[self alloc] initWithPath:DEFAULE_DB_PATH];
     });
-    return instance; \
-    return nil;
+    return instance;
 }
+
 
 
 @end

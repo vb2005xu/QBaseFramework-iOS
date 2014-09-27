@@ -10,14 +10,11 @@
 
 @interface QBaseModel : JSONModel
 
-/**
- *  增删改数据库操作
- */
-- (BOOL)executeUpdate:(NSString *)sql, ...;
+- (BOOL)createTable;
+- (BOOL)dropTable;
+- (BOOL)checkTableIsExist;
+- (BOOL)insertTable;
+- (BOOL)updateTable;
 
-/**
- *  查找
- */
-- (FMResultSet *)executeQuery:(NSString *)sql, ...;
 
 @end

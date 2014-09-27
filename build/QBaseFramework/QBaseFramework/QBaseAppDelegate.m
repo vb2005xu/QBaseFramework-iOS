@@ -13,16 +13,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
     
+    NSDictionary *params =
+                        @{
+                          @"meap_id" :   @(1),
+                          @"name"    :   @"Andy Jin",
+                          @"age"     :   @(18)
+                          };
     
-    NSDictionary *dict = @{
-                           @"name":@"andyJin",
-                           @"age":@"13"
-                           };
+    QBaseTestModel *m = [[QBaseTestModel alloc] initWithDictionary:params error:nil];
     
-    QBaseTestModel *model = [[QBaseTestModel alloc] initWithDictionary:dict error:nil];
+    [m createTable];
     
-    [model executeUpdate:@"CREATE TABLE IF NOT EXISTS andy(name, age)"];
+    [m insertTable];
+    
+    [m updateTable];
+    
     
     
     // Override point for customization after application launch.
