@@ -1,0 +1,11 @@
+{
+    "status": {
+        "code": 0,
+        "msg": "test"
+    },
+    "data": {
+        "version": "1.0.0",
+        "description": "更新数据",
+        "plistUrl":"https://shiren1118.b0.upaiyun.com/appcenter/AppManagment.plist"
+    }
+}
