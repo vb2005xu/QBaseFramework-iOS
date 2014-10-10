@@ -148,9 +148,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		256E5A6619E7D8FB0082AEAA /* QBaseVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBaseVendor.h; path = ../QBaseVendor.h; sourceTree = "<group>"; };
 		A16955FA19D547C000AA8A67 /* NSMeapSqlHanldler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMeapSqlHanldler.h; sourceTree = "<group>"; };
 		A16955FB19D547C000AA8A67 /* NSMeapSqlHanldler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMeapSqlHanldler.m; sourceTree = "<group>"; };
-		A1C8F6C419D1268100C94571 /* QBaseVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBaseVendor.h; path = ../../src/vendor/QBaseVendor.h; sourceTree = "<group>"; };
 		A1C8F6C519D1268E00C94571 /* QBasePrecompile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBasePrecompile.h; path = ../../src/system/QBasePrecompile.h; sourceTree = "<group>"; };
 		A1C8F6C619D126AE00C94571 /* QBaseFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBaseFramework.h; path = ../../src/QBaseFramework.h; sourceTree = "<group>"; };
 		A1DC1B8219CD53D0003E102E /* QBaseFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBaseFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -408,7 +408,6 @@
 		A1DC201E19CD562C003E102E /* vendor */ = {
 			isa = PBXGroup;
 			children = (
-				A1C8F6C419D1268100C94571 /* QBaseVendor.h */,
 				A16955F919D547C000AA8A67 /* NSMeap */,
 				A1DC215619CD59BB003E102E /* JSONKit */,
 				A1DC214919CD585C003E102E /* TMCache */,
@@ -652,6 +651,7 @@
 		A1DC215D19CD5E99003E102E /* system */ = {
 			isa = PBXGroup;
 			children = (
+				256E5A6619E7D8FB0082AEAA /* QBaseVendor.h */,
 				A1DC217719CD7C91003E102E /* QBaseSystem.h */,
 				A1DC215E19CD5E99003E102E /* cache */,
 				A1DC216019CD5E99003E102E /* http */,
