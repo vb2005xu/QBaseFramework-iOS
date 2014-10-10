@@ -16,5 +16,4 @@
 - (BOOL)insertTable;
 - (BOOL)updateTable;
 
-
 @end

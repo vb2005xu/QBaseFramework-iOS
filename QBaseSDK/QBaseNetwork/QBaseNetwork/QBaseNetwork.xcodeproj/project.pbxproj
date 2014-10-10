@@ -20,7 +20,7 @@
 		A16442B819D68FCB00AC2176 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A16442B619D68FCB00AC2176 /* InfoPlist.strings */; };
 		A16442BA19D68FCB00AC2176 /* QBaseNetworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A16442B919D68FCB00AC2176 /* QBaseNetworkTests.m */; };
 		A16442C519D68FF600AC2176 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A16442C419D68FF600AC2176 /* Reachability.m */; };
-		A16442C919D68FFB00AC2176 /* QBaseNetworkListener.m in Sources */ = {isa = PBXBuildFile; fileRef = A16442C819D68FFB00AC2176 /* QBaseNetworkListener.m */; };
+		A16442C919D68FFB00AC2176 /* QBaseNetworkObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = A16442C819D68FFB00AC2176 /* QBaseNetworkObserver.m */; };
 		A16442CD19D6978000AC2176 /* QBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16442CC19D6978000AC2176 /* QBaseViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -53,8 +53,8 @@
 		A16442B919D68FCB00AC2176 /* QBaseNetworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBaseNetworkTests.m; sourceTree = "<group>"; };
 		A16442C319D68FF600AC2176 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = ../lib/Reachability/Reachability.h; sourceTree = "<group>"; };
 		A16442C419D68FF600AC2176 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = ../lib/Reachability/Reachability.m; sourceTree = "<group>"; };
-		A16442C719D68FFB00AC2176 /* QBaseNetworkListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseNetworkListener.h; sourceTree = "<group>"; };
-		A16442C819D68FFB00AC2176 /* QBaseNetworkListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseNetworkListener.m; sourceTree = "<group>"; };
+		A16442C719D68FFB00AC2176 /* QBaseNetworkObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseNetworkObserver.h; sourceTree = "<group>"; };
+		A16442C819D68FFB00AC2176 /* QBaseNetworkObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseNetworkObserver.m; sourceTree = "<group>"; };
 		A16442CA19D6971500AC2176 /* QBasePrecompile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBasePrecompile.h; sourceTree = "<group>"; };
 		A16442CB19D6978000AC2176 /* QBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseViewController.h; sourceTree = "<group>"; };
 		A16442CC19D6978000AC2176 /* QBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseViewController.m; sourceTree = "<group>"; };
@@ -163,8 +163,8 @@
 		A16442C619D68FFB00AC2176 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				A16442C719D68FFB00AC2176 /* QBaseNetworkListener.h */,
-				A16442C819D68FFB00AC2176 /* QBaseNetworkListener.m */,
+				A16442C719D68FFB00AC2176 /* QBaseNetworkObserver.h */,
+				A16442C819D68FFB00AC2176 /* QBaseNetworkObserver.m */,
 			);
 			name = src;
 			path = ../src;
@@ -270,7 +270,7 @@
 				A16442CD19D6978000AC2176 /* QBaseViewController.m in Sources */,
 				A16442C519D68FF600AC2176 /* Reachability.m in Sources */,
 				A16442A519D68FCB00AC2176 /* QBaseAppDelegate.m in Sources */,
-				A16442C919D68FFB00AC2176 /* QBaseNetworkListener.m in Sources */,
+				A16442C919D68FFB00AC2176 /* QBaseNetworkObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +473,7 @@
 				A16442BF19D68FCB00AC2176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A16442C019D68FCB00AC2176 /* Build configuration list for PBXNativeTarget "QBaseNetworkTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +482,7 @@
 				A16442C219D68FCB00AC2176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

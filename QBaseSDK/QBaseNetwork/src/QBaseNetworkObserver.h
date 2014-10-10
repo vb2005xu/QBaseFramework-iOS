@@ -18,11 +18,11 @@ typedef enum QBaseNetStatus {
 
 // 注册通知
 #define kQBaseNetStatusChangedNotification @"kQBaseNetStatusChangedNotification"
-@interface QBaseNetworkListener : NSObject
+@interface QBaseNetworkObserver : NSObject
 {
     Reachability *_reach;
 }
-DEFINE_SINGLETON_FOR_HEADER(QBaseNetworkListener)
+DEFINE_SINGLETON_FOR_HEADER(QBaseNetworkObserver)
 
 /**
  *  当前网络状态

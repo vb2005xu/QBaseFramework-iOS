@@ -13,8 +13,6 @@
 		A1D204C019E77B5B000A1EB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1D204BE19E77B5B000A1EB2 /* InfoPlist.strings */; };
 		A1D204C219E77B5B000A1EB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D204C119E77B5B000A1EB2 /* main.m */; };
 		A1D204C619E77B5B000A1EB2 /* QBaseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D204C519E77B5B000A1EB2 /* QBaseAppDelegate.m */; };
-		A1D204C919E77B5B000A1EB2 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D204C719E77B5B000A1EB2 /* Main_iPhone.storyboard */; };
-		A1D204CC19E77B5B000A1EB2 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D204CA19E77B5B000A1EB2 /* Main_iPad.storyboard */; };
 		A1D204CF19E77B5B000A1EB2 /* QBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D204CE19E77B5B000A1EB2 /* QBaseViewController.m */; };
 		A1D204D119E77B5B000A1EB2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D204D019E77B5B000A1EB2 /* Images.xcassets */; };
 		A1D204D819E77B5B000A1EB2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D204D719E77B5B000A1EB2 /* XCTest.framework */; };
@@ -46,10 +44,8 @@
 		A1D204C319E77B5B000A1EB2 /* KeyboardManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyboardManager-Prefix.pch"; sourceTree = "<group>"; };
 		A1D204C419E77B5B000A1EB2 /* QBaseAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QBaseAppDelegate.h; sourceTree = "<group>"; };
 		A1D204C519E77B5B000A1EB2 /* QBaseAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBaseAppDelegate.m; sourceTree = "<group>"; };
-		A1D204C819E77B5B000A1EB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		A1D204CB19E77B5B000A1EB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		A1D204CD19E77B5B000A1EB2 /* QBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QBaseViewController.h; sourceTree = "<group>"; };
-		A1D204CE19E77B5B000A1EB2 /* QBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBaseViewController.m; sourceTree = "<group>"; };
+		A1D204CD19E77B5B000A1EB2 /* QBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = QBaseViewController.h; path = ../KeyboardManager/QBaseViewController.h; sourceTree = "<group>"; };
+		A1D204CE19E77B5B000A1EB2 /* QBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = QBaseViewController.m; path = ../KeyboardManager/QBaseViewController.m; sourceTree = "<group>"; };
 		A1D204D019E77B5B000A1EB2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A1D204D619E77B5B000A1EB2 /* KeyboardManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D204D719E77B5B000A1EB2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -120,10 +116,6 @@
 			children = (
 				A1D204C419E77B5B000A1EB2 /* QBaseAppDelegate.h */,
 				A1D204C519E77B5B000A1EB2 /* QBaseAppDelegate.m */,
-				A1D204C719E77B5B000A1EB2 /* Main_iPhone.storyboard */,
-				A1D204CA19E77B5B000A1EB2 /* Main_iPad.storyboard */,
-				A1D204CD19E77B5B000A1EB2 /* QBaseViewController.h */,
-				A1D204CE19E77B5B000A1EB2 /* QBaseViewController.m */,
 				A1D204D019E77B5B000A1EB2 /* Images.xcassets */,
 				A1D204BC19E77B5B000A1EB2 /* Supporting Files */,
 			);
@@ -164,6 +156,8 @@
 			children = (
 				A1D204EE19E77B78000A1EB2 /* QBaseKeyboardManager.h */,
 				A1D204EF19E77B78000A1EB2 /* QBaseKeyboardManager.m */,
+				A1D204CD19E77B5B000A1EB2 /* QBaseViewController.h */,
+				A1D204CE19E77B5B000A1EB2 /* QBaseViewController.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -245,9 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1D204CC19E77B5B000A1EB2 /* Main_iPad.storyboard in Resources */,
 				A1D204D119E77B5B000A1EB2 /* Images.xcassets in Resources */,
-				A1D204C919E77B5B000A1EB2 /* Main_iPhone.storyboard in Resources */,
 				A1D204C019E77B5B000A1EB2 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,22 +291,6 @@
 				A1D204BF19E77B5B000A1EB2 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A1D204C719E77B5B000A1EB2 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A1D204C819E77B5B000A1EB2 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		A1D204CA19E77B5B000A1EB2 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A1D204CB19E77B5B000A1EB2 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		A1D204E019E77B5B000A1EB2 /* InfoPlist.strings */ = {

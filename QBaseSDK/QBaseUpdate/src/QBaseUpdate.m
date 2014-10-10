@@ -7,7 +7,7 @@
 #define kUIDeviceFamily ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"UIDeviceFamily"])
 
 // UserDefault -- Values
-#define REMIND_DATE @"REMIND_DATE"
+#define REMIND_DATE @"QBASE_REMIND_DATE"
 
 // inline -- Func
 CG_INLINE BOOL needUpdate(NSString *old, NSString *new) {
@@ -18,7 +18,7 @@ CG_INLINE BOOL needSkipUpdate() {
 }
 
 // 打印
-#define LOG(...)\
+#define QBaseLOG(...)\
     if(SELF.logEnabled) \
         NSLog(__VA_ARGS__);
 // SELF
@@ -70,15 +70,15 @@ CG_INLINE BOOL needSkipUpdate() {
  */
 + (void)startCheck
 {
-    LOG(@"开始版本检测");
+    QBaseLOG(@"开始版本检测");
     
     if ([SELF checkConsecutiveDays]) {
-        LOG(@"用户点击跳过忽略时间已到, 清除 REMIND_DATE");
+        QBaseLOG(@"用户点击跳过忽略时间已到, 清除 REMIND_DATE");
         [[NSUserDefaults standardUserDefaults] removeObjectForKey:REMIND_DATE];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
     
-    LOG(@"打开线程, 开始异步下载相关数据源, 相关链接为: %@", [SELF getUrl]);
+    QBaseLOG(@"打开线程, 开始异步下载相关数据源, 相关链接为: %@", [SELF getUrl]);
     dispatch_queue_t queue = dispatch_queue_create(NULL, NULL);
     dispatch_async(queue, ^{
         
@@ -89,14 +89,16 @@ CG_INLINE BOOL needSkipUpdate() {
                                         error:&error];
         
         if (!data) {
-            LOG(@"请求失败, 回调(错误, 无效, 无数据源), 结束");
-            SELF.completionBlock(error, NO, nil);
+            QBaseLOG(@"请求失败, 回调(错误, 无效, 无数据源), 结束");
+            if (SELF.completionBlock) {
+                SELF.completionBlock(error, NO, nil);
+            }
             return ;
             
         }else {
             
             if (needSkipUpdate()) {
-                LOG(@"距离上次用户点击取消不足%d秒, 结束",REMIND_INTERVAL);
+                QBaseLOG(@"距离上次用户点击取消不足%d秒, 结束",REMIND_INTERVAL);
                 return;
             }
             
@@ -105,12 +107,12 @@ CG_INLINE BOOL needSkipUpdate() {
                                                                      error:nil];
             if (result && [result isKindOfClass:[NSDictionary class]]) {
                 
-                LOG(@"开始解析数据");
+                QBaseLOG(@"开始解析数据");
                 
                 SELF.dataDict = [result objectForKey:@"data"];
                 
                 if (!SELF.dataDict || ![SELF.dataDict isKindOfClass:[NSDictionary class]]) {
-                    LOG(@"解析数据发现类型不匹配, 结束");
+                    QBaseLOG(@"解析数据发现类型不匹配, 结束");
                     return;
                 }
                 
@@ -120,7 +122,7 @@ CG_INLINE BOOL needSkipUpdate() {
                 
                 if (needUpdate(kCFBundleVersion, version)) {
 
-                    LOG(@"需要更新, 弹出提示框");
+                    QBaseLOG(@"需要更新, 弹出提示框");
 
                     // 如果需要更新
                     dispatch_async(dispatch_get_main_queue(), ^{
@@ -130,7 +132,7 @@ CG_INLINE BOOL needSkipUpdate() {
                     
                 }else {
                     
-                    LOG(@"不需要更新, 无需操作, 结束");
+                    QBaseLOG(@"不需要更新, 无需操作, 结束");
                     
                 }
             }
@@ -212,7 +214,7 @@ CG_INLINE BOOL needSkipUpdate() {
         [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:REMIND_DATE];
         [[NSUserDefaults standardUserDefaults] synchronize];
         
-        LOG(@"用户点击取消");
+        QBaseLOG(@"用户点击取消");
         
     }else if(buttonIndex == 1){
 
@@ -224,7 +226,7 @@ CG_INLINE BOOL needSkipUpdate() {
         
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:plistUrl]];
 
-        LOG(@"用户点击升级");
+        QBaseLOG(@"用户点击升级");
     }
 }
 

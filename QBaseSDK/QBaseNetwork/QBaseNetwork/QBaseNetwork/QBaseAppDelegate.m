@@ -14,7 +14,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    [[QBaseNetworkListener sharedQBaseNetworkListener] startNotifier];
+    [[QBaseNetworkObserver sharedQBaseNetworkObserver] startNotifier];
     
     self.window.rootViewController = [[QBaseViewController alloc] init];
     self.window.backgroundColor = [UIColor whiteColor];
