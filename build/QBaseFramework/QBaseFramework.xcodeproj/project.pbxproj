@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A16955FC19D547C000AA8A67 /* NSMeapSqlHanldler.m in Sources */ = {isa = PBXBuildFile; fileRef = A16955FB19D547C000AA8A67 /* NSMeapSqlHanldler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A1DC1B8619CD53D0003E102E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DC1B8519CD53D0003E102E /* Foundation.framework */; };
 		A1DC1B8819CD53D0003E102E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DC1B8719CD53D0003E102E /* CoreGraphics.framework */; };
 		A1DC1B8A19CD53D0003E102E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DC1B8919CD53D0003E102E /* UIKit.framework */; };
@@ -149,8 +148,6 @@
 
 /* Begin PBXFileReference section */
 		256E5A6619E7D8FB0082AEAA /* QBaseVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBaseVendor.h; path = ../QBaseVendor.h; sourceTree = "<group>"; };
-		A16955FA19D547C000AA8A67 /* NSMeapSqlHanldler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMeapSqlHanldler.h; sourceTree = "<group>"; };
-		A16955FB19D547C000AA8A67 /* NSMeapSqlHanldler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMeapSqlHanldler.m; sourceTree = "<group>"; };
 		A1C8F6C519D1268E00C94571 /* QBasePrecompile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBasePrecompile.h; path = ../../src/system/QBasePrecompile.h; sourceTree = "<group>"; };
 		A1C8F6C619D126AE00C94571 /* QBaseFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBaseFramework.h; path = ../../src/QBaseFramework.h; sourceTree = "<group>"; };
 		A1DC1B8219CD53D0003E102E /* QBaseFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBaseFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -321,16 +318,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A16955F919D547C000AA8A67 /* NSMeap */ = {
-			isa = PBXGroup;
-			children = (
-				A16955FA19D547C000AA8A67 /* NSMeapSqlHanldler.h */,
-				A16955FB19D547C000AA8A67 /* NSMeapSqlHanldler.m */,
-			);
-			name = NSMeap;
-			path = ../../src/vendor/NSMeap;
-			sourceTree = "<group>";
-		};
 		A1DC1B7919CD53D0003E102E = {
 			isa = PBXGroup;
 			children = (
@@ -408,7 +395,6 @@
 		A1DC201E19CD562C003E102E /* vendor */ = {
 			isa = PBXGroup;
 			children = (
-				A16955F919D547C000AA8A67 /* NSMeap */,
 				A1DC215619CD59BB003E102E /* JSONKit */,
 				A1DC214919CD585C003E102E /* TMCache */,
 				A1DC210719CD584E003E102E /* SDWebImage */,
@@ -852,7 +838,6 @@
 				A1DC218719CD83C9003E102E /* QBaseDatabase.m in Sources */,
 				A1DC213119CD584E003E102E /* SDWebImageDecoder.m in Sources */,
 				A1DC204819CD56AC003E102E /* EGOCache.m in Sources */,
-				A16955FC19D547C000AA8A67 /* NSMeapSqlHanldler.m in Sources */,
 				A1DC208319CD572A003E102E /* FMResultSet.m in Sources */,
 				A1DC20A419CD57BF003E102E /* JSONModelClassProperty.m in Sources */,
 				A1DC20A219CD57BF003E102E /* JSONModelArray.m in Sources */,
