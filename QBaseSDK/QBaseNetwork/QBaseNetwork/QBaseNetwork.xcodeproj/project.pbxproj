@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A145CB3919E7D7D600BAEFDD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A145CB3819E7D7D600BAEFDD /* Reachability.m */; };
 		A164429519D68FCB00AC2176 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A164429419D68FCB00AC2176 /* Foundation.framework */; };
 		A164429719D68FCB00AC2176 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A164429619D68FCB00AC2176 /* CoreGraphics.framework */; };
 		A164429919D68FCB00AC2176 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A164429819D68FCB00AC2176 /* UIKit.framework */; };
@@ -19,7 +20,6 @@
 		A16442B019D68FCB00AC2176 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A164429819D68FCB00AC2176 /* UIKit.framework */; };
 		A16442B819D68FCB00AC2176 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A16442B619D68FCB00AC2176 /* InfoPlist.strings */; };
 		A16442BA19D68FCB00AC2176 /* QBaseNetworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A16442B919D68FCB00AC2176 /* QBaseNetworkTests.m */; };
-		A16442C519D68FF600AC2176 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A16442C419D68FF600AC2176 /* Reachability.m */; };
 		A16442C919D68FFB00AC2176 /* QBaseNetworkObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = A16442C819D68FFB00AC2176 /* QBaseNetworkObserver.m */; };
 		A16442CD19D6978000AC2176 /* QBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16442CC19D6978000AC2176 /* QBaseViewController.m */; };
 /* End PBXBuildFile section */
@@ -35,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A145CB3719E7D7D600BAEFDD /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A145CB3819E7D7D600BAEFDD /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		A164429119D68FCB00AC2176 /* QBaseNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBaseNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A164429419D68FCB00AC2176 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A164429619D68FCB00AC2176 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,8 +53,6 @@
 		A16442B519D68FCB00AC2176 /* QBaseNetworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QBaseNetworkTests-Info.plist"; sourceTree = "<group>"; };
 		A16442B719D68FCB00AC2176 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A16442B919D68FCB00AC2176 /* QBaseNetworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBaseNetworkTests.m; sourceTree = "<group>"; };
-		A16442C319D68FF600AC2176 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = ../lib/Reachability/Reachability.h; sourceTree = "<group>"; };
-		A16442C419D68FF600AC2176 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = ../lib/Reachability/Reachability.m; sourceTree = "<group>"; };
 		A16442C719D68FFB00AC2176 /* QBaseNetworkObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseNetworkObserver.h; sourceTree = "<group>"; };
 		A16442C819D68FFB00AC2176 /* QBaseNetworkObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseNetworkObserver.m; sourceTree = "<group>"; };
 		A16442CA19D6971500AC2176 /* QBasePrecompile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBasePrecompile.h; sourceTree = "<group>"; };
@@ -84,12 +84,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A145CB3619E7D7D600BAEFDD /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				A145CB3719E7D7D600BAEFDD /* Reachability.h */,
+				A145CB3819E7D7D600BAEFDD /* Reachability.m */,
+			);
+			name = lib;
+			path = ../lib;
+			sourceTree = "<group>";
+		};
 		A164428819D68FCB00AC2176 = {
 			isa = PBXGroup;
 			children = (
+				A145CB3619E7D7D600BAEFDD /* lib */,
 				A16442C619D68FFB00AC2176 /* src */,
-				A16442C319D68FF600AC2176 /* Reachability.h */,
-				A16442C419D68FF600AC2176 /* Reachability.m */,
 				A164429A19D68FCB00AC2176 /* QBaseNetwork */,
 				A16442B319D68FCB00AC2176 /* QBaseNetworkTests */,
 				A164429319D68FCB00AC2176 /* Frameworks */,
@@ -268,9 +277,9 @@
 			files = (
 				A16442A119D68FCB00AC2176 /* main.m in Sources */,
 				A16442CD19D6978000AC2176 /* QBaseViewController.m in Sources */,
-				A16442C519D68FF600AC2176 /* Reachability.m in Sources */,
 				A16442A519D68FCB00AC2176 /* QBaseAppDelegate.m in Sources */,
 				A16442C919D68FFB00AC2176 /* QBaseNetworkObserver.m in Sources */,
+				A145CB3919E7D7D600BAEFDD /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
