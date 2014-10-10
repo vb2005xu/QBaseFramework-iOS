@@ -28,3 +28,6 @@
 [submodule "src/vendor/FLAnimatedImage"]
 	path = src/vendor/FLAnimatedImage
 	url = git@github.com:Flipboard/FLAnimatedImage.git
+[submodule "src/vendor/Reachablity"]
+	path = src/vendor/Reachablity
+	url = git@github.com:tonymillion/Reachability.git
