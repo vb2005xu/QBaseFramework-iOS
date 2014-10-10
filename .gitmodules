@@ -6,7 +6,7 @@
 	url = git@github.com:icanzilb/JSONModel.git
 [submodule "src/vendor/JSONKit"]
 	path = src/vendor/JSONKit
-	url = git@github.com:johnezang/JSONKit.git
+	url = git@github.com:git@github.com:QBaseFramework/JSONKit.git
 [submodule "src/vendor/fmdb"]
 	path = src/vendor/fmdb
 	url = git@github.com:ccgus/fmdb.git
