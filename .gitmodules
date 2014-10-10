@@ -6,7 +6,7 @@
 	url = git@github.com:icanzilb/JSONModel.git
 [submodule "src/vendor/JSONKit"]
 	path = src/vendor/JSONKit
-	url = git@github.com:git@github.com:QBaseFramework/JSONKit.git
+	url = git@github.com:QBaseFramework/JSONKit.git
 [submodule "src/vendor/fmdb"]
 	path = src/vendor/fmdb
 	url = git@github.com:ccgus/fmdb.git
@@ -28,3 +28,6 @@
 [submodule "src/vendor/FLAnimatedImage"]
 	path = src/vendor/FLAnimatedImage
 	url = git@github.com:Flipboard/FLAnimatedImage.git
+[submodule "src/vendor/Reachablity"]
+	path = src/vendor/Reachablity
+	url = git@github.com:tonymillion/Reachability.git
