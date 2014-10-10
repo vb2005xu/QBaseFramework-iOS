@@ -10,7 +10,7 @@
 
 /// 数据库语句处理类
 
-@interface NSMeapSqlHanldler : NSObject
+@interface QBaseSqlHanldler : NSObject
 /**
  *	@brief	创建表的sql语句
  *

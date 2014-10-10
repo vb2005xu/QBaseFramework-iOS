@@ -6,12 +6,12 @@
 //  Copyright (c) 2013年 nationsky. All rights reserved.
 //
 
-#import "NSMeapSqlHanldler.h"
+#import "QBaseSqlHanldler.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
 #import <objc/objc.h>
 
-@implementation NSMeapSqlHanldler
+@implementation QBaseSqlHanldler
 +(NSString *)createTableSql:(Class)myClass
 {
     NSMutableString *sql=[[NSMutableString alloc] init];
@@ -32,7 +32,7 @@
         
 		NSString *class_type=[proty substringToIndex:2];
         NSString *primary=@"";
-        if ([name isEqualToString:@"meap_id"]) {
+        if ([name isEqualToString:@"qbase_id"]) {
             haveKey=YES;
             primary=@"PRIMARY KEY AUTOINCREMENT DEFAULT NULL";
         }
@@ -64,7 +64,7 @@
     if (haveKey) {
         [sql appendString:[keys componentsJoinedByString:@","]];
     }else {
-        [sql appendFormat:@"meap_id INTEGER PRIMARY KEY AUTOINCREMENT DEFAULT NULL, %@",[keys componentsJoinedByString:@","]];
+        [sql appendFormat:@"qbase_id INTEGER PRIMARY KEY AUTOINCREMENT DEFAULT NULL, %@",[keys componentsJoinedByString:@","]];
     }
     
     free(properties);
@@ -97,7 +97,7 @@
             continue;
         }
         
-        if (![name hasPrefix:@"meap_id"]) {
+        if (![name hasPrefix:@"qbase_id"]) {
             [keys addObject:name];
         }
     }
@@ -140,7 +140,7 @@
         if ([dictionary objectForKey:name]==nil || ![[dictionary allKeys] containsObject:name]) {
             continue;
         }
-        if ([name hasPrefix:@"meap_id"]) {
+        if ([name hasPrefix:@"qbase_id"]) {
             idKey=[NSString stringWithFormat:@"%@",name];
             
         }
@@ -148,7 +148,7 @@
     }
     
     for (NSString *key in [dictionary allKeys]) {
-        if (![propertiesArray containsObject:key]&&![key isEqualToString:@"meap_id"]) {
+        if (![propertiesArray containsObject:key]&&![key isEqualToString:@"qbase_id"]) {
             [dictionary removeObjectForKey:key];
         }
     }
@@ -166,7 +166,7 @@
         [sql appendFormat:@" where %@=:%@",idKey,idKey];
     }else{
         //FIXME:可能要修改
-        [sql appendFormat:@" where meap_id=:meap_id"];
+        [sql appendFormat:@" where qbase_id=:qbase_id"];
     }
     [keys release];
     free(properties);
@@ -309,7 +309,7 @@
         }
     }
      
-    SEL selector = NSSelectorFromString([NSString stringWithFormat:@"%@",@"meap_id"]);        //判断是否有字段对应的get方法
+    SEL selector = NSSelectorFromString([NSString stringWithFormat:@"%@",@"qbase_id"]);        //判断是否有字段对应的get方法
     if ([myObject respondsToSelector:selector])
     {
 //        id str = [myObject performSelector:selector];          //调用get方法
@@ -317,7 +317,7 @@
 //        {
             IMP myImp1 = [myObject methodForSelector:selector];
             long str = ((long (*) (id,SEL))myImp1)(myObject,selector);
-            [returnValue setObject:[NSString stringWithFormat:@"%ld",str] forKey:@"meap_id"];
+            [returnValue setObject:[NSString stringWithFormat:@"%ld",str] forKey:@"qbase_id"];
 //        }
     }
     free(properties);
