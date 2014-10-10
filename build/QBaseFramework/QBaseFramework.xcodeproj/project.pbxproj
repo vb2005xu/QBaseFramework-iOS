@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
-		A145CB3D19E7E13E00BAEFDD /* QBaseSqlHanldler.m in Sources */ = {isa = PBXBuildFile; fileRef = A145CB3C19E7E13E00BAEFDD /* QBaseSqlHanldler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-=======
->>>>>>> 69d6997eb9cc41b6bec228306a9df9ac91176a4c
+		A10F427F19E7EB4700F0A0B8 /* QBaseSqlHanldler.m in Sources */ = {isa = PBXBuildFile; fileRef = A10F427E19E7EB4700F0A0B8 /* QBaseSqlHanldler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A10F428719E7EE5600F0A0B8 /* QBaseDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A10F428419E7EE5600F0A0B8 /* QBaseDatabase.m */; };
+		A10F428819E7EE5600F0A0B8 /* QBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A10F428619E7EE5600F0A0B8 /* QBaseModel.m */; };
 		A1DC1B8619CD53D0003E102E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DC1B8519CD53D0003E102E /* Foundation.framework */; };
 		A1DC1B8819CD53D0003E102E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DC1B8719CD53D0003E102E /* CoreGraphics.framework */; };
 		A1DC1B8A19CD53D0003E102E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DC1B8919CD53D0003E102E /* UIKit.framework */; };
@@ -132,12 +131,8 @@
 		A1DC215A19CD59D2003E102E /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC215819CD59D2003E102E /* JSONKit.m */; };
 		A1DC216719CD60DE003E102E /* QBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC216619CD60DE003E102E /* QBaseRequest.m */; };
 		A1DC216819CD60DE003E102E /* QBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC216619CD60DE003E102E /* QBaseRequest.m */; };
-		A1DC217419CD7BEE003E102E /* QBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC217319CD7BEE003E102E /* QBaseModel.m */; };
-		A1DC217519CD7BEE003E102E /* QBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC217319CD7BEE003E102E /* QBaseModel.m */; };
 		A1DC217A19CD7CFF003E102E /* QBaseTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC217919CD7CFF003E102E /* QBaseTestModel.m */; };
 		A1DC217B19CD7CFF003E102E /* QBaseTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC217919CD7CFF003E102E /* QBaseTestModel.m */; };
-		A1DC218719CD83C9003E102E /* QBaseDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC218619CD83C9003E102E /* QBaseDatabase.m */; };
-		A1DC218819CD83C9003E102E /* QBaseDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC218619CD83C9003E102E /* QBaseDatabase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,13 +146,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
-		A145CB3B19E7E13E00BAEFDD /* QBaseSqlHanldler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseSqlHanldler.h; sourceTree = "<group>"; };
-		A145CB3C19E7E13E00BAEFDD /* QBaseSqlHanldler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseSqlHanldler.m; sourceTree = "<group>"; };
-		A1C8F6C419D1268100C94571 /* QBaseVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBaseVendor.h; path = ../../src/vendor/QBaseVendor.h; sourceTree = "<group>"; };
-=======
-		256E5A6619E7D8FB0082AEAA /* QBaseVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBaseVendor.h; path = ../QBaseVendor.h; sourceTree = "<group>"; };
->>>>>>> 69d6997eb9cc41b6bec228306a9df9ac91176a4c
+		A10F427619E7EA8600F0A0B8 /* QBaseVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBaseVendor.h; path = ../../src/QBaseVendor.h; sourceTree = "<group>"; };
+		A10F427D19E7EB4700F0A0B8 /* QBaseSqlHanldler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseSqlHanldler.h; sourceTree = "<group>"; };
+		A10F427E19E7EB4700F0A0B8 /* QBaseSqlHanldler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseSqlHanldler.m; sourceTree = "<group>"; };
+		A10F428119E7EE5600F0A0B8 /* QBaseCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseCache.h; sourceTree = "<group>"; };
+		A10F428319E7EE5600F0A0B8 /* QBaseDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseDatabase.h; sourceTree = "<group>"; };
+		A10F428419E7EE5600F0A0B8 /* QBaseDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseDatabase.m; sourceTree = "<group>"; };
+		A10F428519E7EE5600F0A0B8 /* QBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseModel.h; sourceTree = "<group>"; };
+		A10F428619E7EE5600F0A0B8 /* QBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseModel.m; sourceTree = "<group>"; };
 		A1C8F6C519D1268E00C94571 /* QBasePrecompile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBasePrecompile.h; path = ../../src/system/QBasePrecompile.h; sourceTree = "<group>"; };
 		A1C8F6C619D126AE00C94571 /* QBaseFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBaseFramework.h; path = ../../src/QBaseFramework.h; sourceTree = "<group>"; };
 		A1DC1B8219CD53D0003E102E /* QBaseFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBaseFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -291,16 +287,11 @@
 		A1DC215719CD59D2003E102E /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = ../../src/vendor/JSONKit/JSONKit.h; sourceTree = "<group>"; };
 		A1DC215819CD59D2003E102E /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = ../../src/vendor/JSONKit/JSONKit.m; sourceTree = "<group>"; };
 		A1DC216219CD6015003E102E /* QBaseHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseHttp.h; sourceTree = "<group>"; };
-		A1DC216319CD6049003E102E /* QBaseCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseCache.h; sourceTree = "<group>"; };
 		A1DC216519CD60DE003E102E /* QBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseRequest.h; sourceTree = "<group>"; };
 		A1DC216619CD60DE003E102E /* QBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseRequest.m; sourceTree = "<group>"; };
-		A1DC217219CD7BEE003E102E /* QBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseModel.h; sourceTree = "<group>"; };
-		A1DC217319CD7BEE003E102E /* QBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseModel.m; sourceTree = "<group>"; };
 		A1DC217719CD7C91003E102E /* QBaseSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseSystem.h; sourceTree = "<group>"; };
 		A1DC217819CD7CFF003E102E /* QBaseTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseTestModel.h; sourceTree = "<group>"; };
 		A1DC217919CD7CFF003E102E /* QBaseTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseTestModel.m; sourceTree = "<group>"; };
-		A1DC218519CD83C9003E102E /* QBaseDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseDatabase.h; sourceTree = "<group>"; };
-		A1DC218619CD83C9003E102E /* QBaseDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseDatabase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,19 +319,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-<<<<<<< HEAD
+		A10F428019E7EE5600F0A0B8 /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				A10F428119E7EE5600F0A0B8 /* QBaseCache.h */,
+				A10F428219E7EE5600F0A0B8 /* QBaseModel */,
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		A10F428219E7EE5600F0A0B8 /* QBaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				A10F428319E7EE5600F0A0B8 /* QBaseDatabase.h */,
+				A10F428419E7EE5600F0A0B8 /* QBaseDatabase.m */,
+				A10F428519E7EE5600F0A0B8 /* QBaseModel.h */,
+				A10F428619E7EE5600F0A0B8 /* QBaseModel.m */,
+			);
+			path = QBaseModel;
+			sourceTree = "<group>";
+		};
 		A145CB3A19E7E13E00BAEFDD /* QBaseSqlHanldler */ = {
 			isa = PBXGroup;
 			children = (
-				A145CB3B19E7E13E00BAEFDD /* QBaseSqlHanldler.h */,
-				A145CB3C19E7E13E00BAEFDD /* QBaseSqlHanldler.m */,
+				A10F427D19E7EB4700F0A0B8 /* QBaseSqlHanldler.h */,
+				A10F427E19E7EB4700F0A0B8 /* QBaseSqlHanldler.m */,
 			);
 			name = QBaseSqlHanldler;
 			path = ../../src/vendor/QBaseSqlHanldler;
 			sourceTree = "<group>";
 		};
-=======
->>>>>>> 69d6997eb9cc41b6bec228306a9df9ac91176a4c
 		A1DC1B7919CD53D0003E102E = {
 			isa = PBXGroup;
 			children = (
@@ -418,11 +426,8 @@
 		A1DC201E19CD562C003E102E /* vendor */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				A1C8F6C419D1268100C94571 /* QBaseVendor.h */,
+				A10F427619E7EA8600F0A0B8 /* QBaseVendor.h */,
 				A145CB3A19E7E13E00BAEFDD /* QBaseSqlHanldler */,
-=======
->>>>>>> 69d6997eb9cc41b6bec228306a9df9ac91176a4c
 				A1DC215619CD59BB003E102E /* JSONKit */,
 				A1DC214919CD585C003E102E /* TMCache */,
 				A1DC210719CD584E003E102E /* SDWebImage */,
@@ -665,36 +670,13 @@
 		A1DC215D19CD5E99003E102E /* system */ = {
 			isa = PBXGroup;
 			children = (
-				256E5A6619E7D8FB0082AEAA /* QBaseVendor.h */,
 				A1DC217719CD7C91003E102E /* QBaseSystem.h */,
-				A1DC215E19CD5E99003E102E /* cache */,
+				A10F428019E7EE5600F0A0B8 /* cache */,
 				A1DC216019CD5E99003E102E /* http */,
 				A1DC216119CD5E99003E102E /* utils */,
 			);
 			name = system;
 			path = ../../src/system;
-			sourceTree = "<group>";
-		};
-		A1DC215E19CD5E99003E102E /* cache */ = {
-			isa = PBXGroup;
-			children = (
-				A1DC216319CD6049003E102E /* QBaseCache.h */,
-				A1DC215F19CD5E99003E102E /* QBaseModel */,
-			);
-			path = cache;
-			sourceTree = "<group>";
-		};
-		A1DC215F19CD5E99003E102E /* QBaseModel */ = {
-			isa = PBXGroup;
-			children = (
-				A1DC217C19CD7E79003E102E /* extension */,
-				A1DC217219CD7BEE003E102E /* QBaseModel.h */,
-				A1DC217319CD7BEE003E102E /* QBaseModel.m */,
-				A1DC218519CD83C9003E102E /* QBaseDatabase.h */,
-				A1DC218619CD83C9003E102E /* QBaseDatabase.m */,
-			);
-			name = QBaseModel;
-			path = ../database;
 			sourceTree = "<group>";
 		};
 		A1DC216019CD5E99003E102E /* http */ = {
@@ -720,13 +702,6 @@
 				A1DC216619CD60DE003E102E /* QBaseRequest.m */,
 			);
 			path = QBaseRequest;
-			sourceTree = "<group>";
-		};
-		A1DC217C19CD7E79003E102E /* extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -846,15 +821,15 @@
 				A1DC20A019CD57BF003E102E /* JSONModel.m in Sources */,
 				A1DC206019CD56C8003E102E /* FICImageTableChunk.m in Sources */,
 				A1DC212919CD584E003E102E /* MKAnnotationView+WebCache.m in Sources */,
-				A1DC217419CD7BEE003E102E /* QBaseModel.m in Sources */,
 				A1DC212B19CD584E003E102E /* NSData+ImageContentType.m in Sources */,
 				A1DC206D19CD5702003E102E /* FLAnimatedImageView.m in Sources */,
 				A1DC205C19CD56C8003E102E /* FICImageFormat.m in Sources */,
 				A1DC205E19CD56C8003E102E /* FICImageTable.m in Sources */,
 				A1DC204319CD567C003E102E /* AFURLSessionManager.m in Sources */,
 				A1DC213519CD584E003E102E /* SDWebImageDownloaderOperation.m in Sources */,
-				A145CB3D19E7E13E00BAEFDD /* QBaseSqlHanldler.m in Sources */,
+				A10F427F19E7EB4700F0A0B8 /* QBaseSqlHanldler.m in Sources */,
 				A1DC20B219CD57BF003E102E /* JSONValueTransformer.m in Sources */,
+				A10F428819E7EE5600F0A0B8 /* QBaseModel.m in Sources */,
 				A1DC20A819CD57BF003E102E /* NSArray+JSONModel.m in Sources */,
 				A1DC204119CD567C003E102E /* AFURLResponseSerialization.m in Sources */,
 				A1DC214119CD584E003E102E /* UIImage+WebP.m in Sources */,
@@ -864,7 +839,7 @@
 				A1DC203719CD567C003E102E /* AFHTTPSessionManager.m in Sources */,
 				A1DC208119CD572A003E102E /* FMDatabaseQueue.m in Sources */,
 				A1DC213F19CD584E003E102E /* UIImage+MultiFormat.m in Sources */,
-				A1DC218719CD83C9003E102E /* QBaseDatabase.m in Sources */,
+				A10F428719E7EE5600F0A0B8 /* QBaseDatabase.m in Sources */,
 				A1DC213119CD584E003E102E /* SDWebImageDecoder.m in Sources */,
 				A1DC204819CD56AC003E102E /* EGOCache.m in Sources */,
 				A1DC208319CD572A003E102E /* FMResultSet.m in Sources */,
@@ -928,7 +903,6 @@
 				A1DC206C19CD5702003E102E /* FLAnimatedImage.m in Sources */,
 				A1DC203619CD567C003E102E /* AFHTTPRequestOperationManager.m in Sources */,
 				A1DC20AD19CD57BF003E102E /* JSONHTTPClient.m in Sources */,
-				A1DC218819CD83C9003E102E /* QBaseDatabase.m in Sources */,
 				A1DC206519CD56C8003E102E /* FICUtilities.m in Sources */,
 				A1DC20A919CD57BF003E102E /* NSArray+JSONModel.m in Sources */,
 				A1DC205D19CD56C8003E102E /* FICImageFormat.m in Sources */,
@@ -948,7 +922,6 @@
 				A1DC213C19CD584E003E102E /* UIButton+WebCache.m in Sources */,
 				A1DC213419CD584E003E102E /* SDWebImageDownloader.m in Sources */,
 				A1DC20A319CD57BF003E102E /* JSONModelArray.m in Sources */,
-				A1DC217519CD7BEE003E102E /* QBaseModel.m in Sources */,
 				A1DC216819CD60DE003E102E /* QBaseRequest.m in Sources */,
 				A1DC217B19CD7CFF003E102E /* QBaseTestModel.m in Sources */,
 			);

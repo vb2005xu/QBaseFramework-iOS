@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 streakq. All rights reserved.
 //
 
-#import "QBaseModel.h"
+#import "QBaseTestModel.h"
 
 @interface QBaseTestModel : QBaseModel
 

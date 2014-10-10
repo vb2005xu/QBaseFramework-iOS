@@ -21,11 +21,7 @@
 #import "TMCache.h"
 #import "FLAnimatedImage.h"
 #import "FLAnimatedImageView.h"
-<<<<<<< HEAD:src/vendor/QBaseVendor.h
 #import "QBaseSqlHanldler.h"
-=======
-//#import "NSMeapSqlHanldler.h"
->>>>>>> 69d6997eb9cc41b6bec228306a9df9ac91176a4c:src/QBaseVendor.h
 
 // UI
 #import "EGOCache.h"

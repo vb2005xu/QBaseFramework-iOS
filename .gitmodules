@@ -31,3 +31,6 @@
 [submodule "src/vendor/Reachablity"]
 	path = src/vendor/Reachablity
 	url = git@github.com:tonymillion/Reachability.git
+[submodule "src/system/cache/QBaseModel"]
+	path = src/system/cache/QBaseModel
+	url = git@github.com:QBaseFramework/QBaseModel.git
