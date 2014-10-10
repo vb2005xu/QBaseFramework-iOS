@@ -11,7 +11,7 @@
 #define REMIND_INTERVAL (20)
 
 // 请求URL
-#define URL_CHECK_VERSION @"http://192.168.10.136:3000"
+#define URL_CHECK_VERSION @"http://192.168.6.74:3000"
 
 /**
  *  更新完成回调Block

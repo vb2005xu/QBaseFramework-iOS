@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 streakq. All rights reserved.
 //
 
-#import "QBaseNetworkListener.h"
+#import "QBaseNetworkObserver.h"
 
-@implementation QBaseNetworkListener
-DEFINE_SINGLETON_FOR_CLASS(QBaseNetworkListener)
+@implementation QBaseNetworkObserver
+DEFINE_SINGLETON_FOR_CLASS(QBaseNetworkObserver)
 
 /**
  *  开始监听网络状态

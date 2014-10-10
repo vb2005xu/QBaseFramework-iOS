@@ -5,18 +5,22 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>FAF6D347-E1DE-4D85-A7C1-05E479ABCA23</string>
+	<string>B6381DEF-F2CE-4E37-83EE-6865BF3D4FBB</string>
 	<key>IDESourceControlProjectName</key>
-	<string>SDK</string>
+	<string>QBaseNetwork</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>0619ECB4-2131-4858-9BF7-A70E461F20B2</key>
+		<string>ssh://github.com/tonymillion/Reachability.git</string>
 		<key>08F0C0B9-B807-4A80-B6F2-C70E0FF3C69D</key>
 		<string>ssh://github.com/streakq/Q-ios-base-framework.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>QBaseSDK/QBaseUpdate/demo/SDK.xcodeproj/project.xcworkspace</string>
+	<string>QBaseSDK/QBaseNetwork/QBaseNetwork/QBaseNetwork.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>0619ECB4-2131-4858-9BF7-A70E461F20B2</key>
+		<string>../../../lib/Reachability</string>
 		<key>08F0C0B9-B807-4A80-B6F2-C70E0FF3C69D</key>
 		<string>../../../../..</string>
 	</dict>
@@ -35,6 +39,14 @@
 			<string>08F0C0B9-B807-4A80-B6F2-C70E0FF3C69D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Q-ios-base-framework</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0619ECB4-2131-4858-9BF7-A70E461F20B2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Reachability</string>
 		</dict>
 	</array>
 </dict>

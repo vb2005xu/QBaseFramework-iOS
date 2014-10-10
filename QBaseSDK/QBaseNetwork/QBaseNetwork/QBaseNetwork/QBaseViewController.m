@@ -18,14 +18,14 @@
 {
     [super viewDidLoad];
 
-    [[QBaseNetworkListener sharedQBaseNetworkListener] registNotification:self
+    [[QBaseNetworkObserver sharedQBaseNetworkObserver] registNotification:self
                                                                  selector:@selector(reachabilityChanged:)];
 }
 
 - (void)reachabilityChanged:(NSNotification *)note
 {
     NSLog(@"当前网络状态发生变化");
-    switch ([QBaseNetworkListener sharedQBaseNetworkListener].status) {
+    switch ([QBaseNetworkObserver sharedQBaseNetworkObserver].status) {
         case QBaseNetStatus_None:
             NSLog(@"无网络");
             break;
