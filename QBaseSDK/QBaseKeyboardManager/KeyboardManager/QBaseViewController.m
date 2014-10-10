@@ -45,7 +45,7 @@
 
 - (void)keyboardManager:(QBaseKeyboardManager *)keyboardManager keyboardHeightDidChanged:(NSInteger)keyboardHeight
 {
-
+    NSLog(@"%d", keyboardHeight);
 }
 
 @end

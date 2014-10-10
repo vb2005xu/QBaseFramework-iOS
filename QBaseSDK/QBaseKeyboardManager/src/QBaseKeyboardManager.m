@@ -37,6 +37,11 @@
     return self;
 }
 
+- (void)dealloc
+{
+    [self removeNotification];
+}
+
 /**
  *  注册通知
  */
@@ -51,6 +56,14 @@
                                              selector:@selector(hiddenKeyboard:)
                                                  name:UIKeyboardWillHideNotification
                                                object:nil];
+}
+
+/**
+ *  移除通知
+ */
+- (void)removeNotification
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark -
