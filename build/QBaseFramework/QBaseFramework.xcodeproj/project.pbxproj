@@ -153,8 +153,8 @@
 		A10F428419E7EE5600F0A0B8 /* QBaseDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseDatabase.m; sourceTree = "<group>"; };
 		A10F428519E7EE5600F0A0B8 /* QBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseModel.h; sourceTree = "<group>"; };
 		A10F428619E7EE5600F0A0B8 /* QBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseModel.m; sourceTree = "<group>"; };
-		A10F428919E7F16500F0A0B8 /* QBaseVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBaseVendor.h; path = ../../src/vendor/QBaseVendor.h; sourceTree = "<group>"; };
-		A1C8F6C519D1268E00C94571 /* QBasePrecompile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBasePrecompile.h; path = ../../src/system/QBasePrecompile.h; sourceTree = "<group>"; };
+		A10F428A19E7F38E00F0A0B8 /* QBasePrecompile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBasePrecompile.h; path = ../../src/QBasePrecompile.h; sourceTree = "<group>"; };
+		A10F428B19E7F38E00F0A0B8 /* QBaseVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBaseVendor.h; path = ../../src/QBaseVendor.h; sourceTree = "<group>"; };
 		A1C8F6C619D126AE00C94571 /* QBaseFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBaseFramework.h; path = ../../src/QBaseFramework.h; sourceTree = "<group>"; };
 		A1DC1B8219CD53D0003E102E /* QBaseFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBaseFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DC1B8519CD53D0003E102E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -658,8 +658,8 @@
 		A1DC215C19CD5E1E003E102E /* src */ = {
 			isa = PBXGroup;
 			children = (
-				A10F428919E7F16500F0A0B8 /* QBaseVendor.h */,
-				A1C8F6C519D1268E00C94571 /* QBasePrecompile.h */,
+				A10F428A19E7F38E00F0A0B8 /* QBasePrecompile.h */,
+				A10F428B19E7F38E00F0A0B8 /* QBaseVendor.h */,
 				A1C8F6C619D126AE00C94571 /* QBaseFramework.h */,
 				A1DC215D19CD5E99003E102E /* system */,
 				A1DC201E19CD562C003E102E /* vendor */,
