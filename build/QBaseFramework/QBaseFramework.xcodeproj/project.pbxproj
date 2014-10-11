@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A10F427F19E7EB4700F0A0B8 /* QBaseSqlHanldler.m in Sources */ = {isa = PBXBuildFile; fileRef = A10F427E19E7EB4700F0A0B8 /* QBaseSqlHanldler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A10F428719E7EE5600F0A0B8 /* QBaseDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A10F428419E7EE5600F0A0B8 /* QBaseDatabase.m */; };
 		A10F428819E7EE5600F0A0B8 /* QBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A10F428619E7EE5600F0A0B8 /* QBaseModel.m */; };
+		A10F42A319E8D97C00F0A0B8 /* QBaseSqlHanldler.m in Sources */ = {isa = PBXBuildFile; fileRef = A10F42A219E8D97C00F0A0B8 /* QBaseSqlHanldler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A1DC1B8619CD53D0003E102E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DC1B8519CD53D0003E102E /* Foundation.framework */; };
 		A1DC1B8819CD53D0003E102E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DC1B8719CD53D0003E102E /* CoreGraphics.framework */; };
 		A1DC1B8A19CD53D0003E102E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DC1B8919CD53D0003E102E /* UIKit.framework */; };
@@ -146,8 +146,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A10F427D19E7EB4700F0A0B8 /* QBaseSqlHanldler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseSqlHanldler.h; sourceTree = "<group>"; };
-		A10F427E19E7EB4700F0A0B8 /* QBaseSqlHanldler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseSqlHanldler.m; sourceTree = "<group>"; };
 		A10F428119E7EE5600F0A0B8 /* QBaseCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseCache.h; sourceTree = "<group>"; };
 		A10F428319E7EE5600F0A0B8 /* QBaseDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseDatabase.h; sourceTree = "<group>"; };
 		A10F428419E7EE5600F0A0B8 /* QBaseDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseDatabase.m; sourceTree = "<group>"; };
@@ -155,6 +153,8 @@
 		A10F428619E7EE5600F0A0B8 /* QBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseModel.m; sourceTree = "<group>"; };
 		A10F428A19E7F38E00F0A0B8 /* QBasePrecompile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBasePrecompile.h; path = ../../src/QBasePrecompile.h; sourceTree = "<group>"; };
 		A10F428B19E7F38E00F0A0B8 /* QBaseVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBaseVendor.h; path = ../../src/QBaseVendor.h; sourceTree = "<group>"; };
+		A10F42A119E8D97C00F0A0B8 /* QBaseSqlHanldler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseSqlHanldler.h; sourceTree = "<group>"; };
+		A10F42A219E8D97C00F0A0B8 /* QBaseSqlHanldler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseSqlHanldler.m; sourceTree = "<group>"; };
 		A1C8F6C619D126AE00C94571 /* QBaseFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBaseFramework.h; path = ../../src/QBaseFramework.h; sourceTree = "<group>"; };
 		A1DC1B8219CD53D0003E102E /* QBaseFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBaseFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DC1B8519CD53D0003E102E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -331,6 +331,7 @@
 		A10F428219E7EE5600F0A0B8 /* QBaseModel */ = {
 			isa = PBXGroup;
 			children = (
+				A10F42A019E8D97C00F0A0B8 /* QBaseSqlHanldler */,
 				A10F428319E7EE5600F0A0B8 /* QBaseDatabase.h */,
 				A10F428419E7EE5600F0A0B8 /* QBaseDatabase.m */,
 				A10F428519E7EE5600F0A0B8 /* QBaseModel.h */,
@@ -339,14 +340,13 @@
 			path = QBaseModel;
 			sourceTree = "<group>";
 		};
-		A145CB3A19E7E13E00BAEFDD /* QBaseSqlHanldler */ = {
+		A10F42A019E8D97C00F0A0B8 /* QBaseSqlHanldler */ = {
 			isa = PBXGroup;
 			children = (
-				A10F427D19E7EB4700F0A0B8 /* QBaseSqlHanldler.h */,
-				A10F427E19E7EB4700F0A0B8 /* QBaseSqlHanldler.m */,
+				A10F42A119E8D97C00F0A0B8 /* QBaseSqlHanldler.h */,
+				A10F42A219E8D97C00F0A0B8 /* QBaseSqlHanldler.m */,
 			);
-			name = QBaseSqlHanldler;
-			path = ../../src/vendor/QBaseSqlHanldler;
+			path = QBaseSqlHanldler;
 			sourceTree = "<group>";
 		};
 		A1DC1B7919CD53D0003E102E = {
@@ -426,7 +426,6 @@
 		A1DC201E19CD562C003E102E /* vendor */ = {
 			isa = PBXGroup;
 			children = (
-				A145CB3A19E7E13E00BAEFDD /* QBaseSqlHanldler */,
 				A1DC215619CD59BB003E102E /* JSONKit */,
 				A1DC214919CD585C003E102E /* TMCache */,
 				A1DC210719CD584E003E102E /* SDWebImage */,
@@ -827,8 +826,8 @@
 				A1DC205E19CD56C8003E102E /* FICImageTable.m in Sources */,
 				A1DC204319CD567C003E102E /* AFURLSessionManager.m in Sources */,
 				A1DC213519CD584E003E102E /* SDWebImageDownloaderOperation.m in Sources */,
-				A10F427F19E7EB4700F0A0B8 /* QBaseSqlHanldler.m in Sources */,
 				A1DC20B219CD57BF003E102E /* JSONValueTransformer.m in Sources */,
+				A10F42A319E8D97C00F0A0B8 /* QBaseSqlHanldler.m in Sources */,
 				A10F428819E7EE5600F0A0B8 /* QBaseModel.m in Sources */,
 				A1DC20A819CD57BF003E102E /* NSArray+JSONModel.m in Sources */,
 				A1DC204119CD567C003E102E /* AFURLResponseSerialization.m in Sources */,
@@ -1040,7 +1039,7 @@
 				INFOPLIST_FILE = "QBaseFramework/QBaseFramework-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ad62704b-46dd-49ff-9e2d-56983b96e0e0";
+				PROVISIONING_PROFILE = "704CE6A8-10D7-42D3-93C7-91790A0B384B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1056,7 +1055,7 @@
 				INFOPLIST_FILE = "QBaseFramework/QBaseFramework-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ad62704b-46dd-49ff-9e2d-56983b96e0e0";
+				PROVISIONING_PROFILE = "704CE6A8-10D7-42D3-93C7-91790A0B384B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

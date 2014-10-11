@@ -9,6 +9,7 @@
 #ifndef QBaseFramework_QBaseCache_h
 #define QBaseFramework_QBaseCache_h
 
+#import "QBaseSqlHanldler.h"
 #import "QBaseDatabase.h"
 #import "QBaseModel.h"
 #endif

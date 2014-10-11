@@ -1,6 +1,6 @@
 AFNetworking/AFNetworking
 icanzilb/JSONModel
-johnezang/JSONKit
+QBaseFramework/JSONKit
 ccgus/fmdb
 tumblr/TMCache
 enormego/EGOCache
@@ -8,3 +8,5 @@ rs/SDWebImage
 path/FastImageCache
 kaiinui/KIChameleonView
 Flipboard/FLAnimatedImage
+tonymillion/Reachability
+QBaseFramework/QBaseModel

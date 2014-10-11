@@ -1,6 +1,3 @@
-[submodule "src/vendor/AFNetworking"]
-	path = src/vendor/AFNetworking
-	url = git@github.com:AFNetworking/AFNetworking.git
 [submodule "src/vendor/JSONModel"]
 	path = src/vendor/JSONModel
 	url = git@github.com:icanzilb/JSONModel.git
@@ -33,4 +30,10 @@
 	url = git@github.com:tonymillion/Reachability.git
 [submodule "src/system/cache/QBaseModel"]
 	path = src/system/cache/QBaseModel
-	url = git@github.com:QBaseFramework/QBaseModel.git
+	url = git@github.com:streakq/QBaseModel.git
+[submodule "src/vendor/AFNetworking"]
+	path = src/vendor/AFNetworking
+	url = git@github.com:AFNetworking/AFNetworking.git
+[submodule "src/vendor/Reachability"]
+	path = src/vendor/Reachability
+	url = git@github.com:tonymillion/Reachability.git
