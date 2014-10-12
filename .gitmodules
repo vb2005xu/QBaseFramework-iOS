@@ -1,9 +1,6 @@
 [submodule "src/vendor/JSONModel"]
 	path = src/vendor/JSONModel
 	url = git@github.com:icanzilb/JSONModel.git
-[submodule "src/vendor/JSONKit"]
-	path = src/vendor/JSONKit
-	url = git@github.com:QBaseFramework/JSONKit.git
 [submodule "src/vendor/fmdb"]
 	path = src/vendor/fmdb
 	url = git@github.com:ccgus/fmdb.git
@@ -28,9 +25,6 @@
 [submodule "src/vendor/Reachablity"]
 	path = src/vendor/Reachablity
 	url = git@github.com:tonymillion/Reachability.git
-[submodule "src/system/cache/QBaseModel"]
-	path = src/system/cache/QBaseModel
-	url = git@github.com:streakq/QBaseModel.git
 [submodule "src/vendor/AFNetworking"]
 	path = src/vendor/AFNetworking
 	url = git@github.com:AFNetworking/AFNetworking.git
@@ -40,3 +34,9 @@
 [submodule "src/mvc/controller/QBaseViewController"]
 	path = src/mvc/controller/QBaseViewController
 	url = git@github.com:QBaseFramework/QBaseViewController.git
+[submodule "src/system/cache/QBaseModel"]
+	path = src/system/cache/QBaseModel
+	url = git@github.com:QBaseFramework/QBaseModel.git
+[submodule "src/vendor/JSONKit"]
+	path = src/vendor/JSONKit
+	url = git@github.com:QBaseFramework/JSONKit.git
