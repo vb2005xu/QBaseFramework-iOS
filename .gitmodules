@@ -40,3 +40,12 @@
 [submodule "src/vendor/JSONKit"]
 	path = src/vendor/JSONKit
 	url = git@github.com:QBaseFramework/JSONKit.git
+[submodule "sdk/QBaseUpdate"]
+	path = sdk/QBaseUpdate
+	url = git@github.com:QBaseFramework/QBaseUpdate.git
+[submodule "sdk/QBasePush"]
+	path = sdk/QBasePush
+	url = git@github.com:QBaseFramework/QBasePush.git
+[submodule "sdk/QBaseNetwork"]
+	path = sdk/QBaseNetwork
+	url = git@github.com:QBaseFramework/QBaseNetwork.git
