@@ -10,6 +10,8 @@
 		A10F428719E7EE5600F0A0B8 /* QBaseDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A10F428419E7EE5600F0A0B8 /* QBaseDatabase.m */; };
 		A10F428819E7EE5600F0A0B8 /* QBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A10F428619E7EE5600F0A0B8 /* QBaseModel.m */; };
 		A10F42A319E8D97C00F0A0B8 /* QBaseSqlHanldler.m in Sources */ = {isa = PBXBuildFile; fileRef = A10F42A219E8D97C00F0A0B8 /* QBaseSqlHanldler.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A1AC6BFE19EA308D0075FA53 /* QBaseViewController+KeyBoardObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AC6BFB19EA308D0075FA53 /* QBaseViewController+KeyBoardObserver.m */; };
+		A1AC6BFF19EA308D0075FA53 /* QBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AC6BFD19EA308D0075FA53 /* QBaseViewController.m */; };
 		A1DC1B8619CD53D0003E102E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DC1B8519CD53D0003E102E /* Foundation.framework */; };
 		A1DC1B8819CD53D0003E102E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DC1B8719CD53D0003E102E /* CoreGraphics.framework */; };
 		A1DC1B8A19CD53D0003E102E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DC1B8919CD53D0003E102E /* UIKit.framework */; };
@@ -17,133 +19,62 @@
 		A1DC1B9219CD53D0003E102E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC1B9119CD53D0003E102E /* main.m */; };
 		A1DC1B9619CD53D0003E102E /* QBaseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC1B9519CD53D0003E102E /* QBaseAppDelegate.m */; };
 		A1DC1B9819CD53D0003E102E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DC1B9719CD53D0003E102E /* Images.xcassets */; };
-		A1DC1B9F19CD53D0003E102E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DC1B9E19CD53D0003E102E /* XCTest.framework */; };
-		A1DC1BA019CD53D0003E102E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DC1B8519CD53D0003E102E /* Foundation.framework */; };
-		A1DC1BA119CD53D0003E102E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DC1B8919CD53D0003E102E /* UIKit.framework */; };
-		A1DC1BA919CD53D0003E102E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1DC1BA719CD53D0003E102E /* InfoPlist.strings */; };
-		A1DC1BAB19CD53D0003E102E /* QBaseFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC1BAA19CD53D0003E102E /* QBaseFrameworkTests.m */; };
 		A1DC201D19CD553E003E102E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DC201C19CD553E003E102E /* libsqlite3.dylib */; };
 		A1DC203319CD567C003E102E /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC202119CD567C003E102E /* AFHTTPRequestOperation.m */; };
-		A1DC203419CD567C003E102E /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC202119CD567C003E102E /* AFHTTPRequestOperation.m */; };
 		A1DC203519CD567C003E102E /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC202319CD567C003E102E /* AFHTTPRequestOperationManager.m */; };
-		A1DC203619CD567C003E102E /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC202319CD567C003E102E /* AFHTTPRequestOperationManager.m */; };
 		A1DC203719CD567C003E102E /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC202519CD567C003E102E /* AFHTTPSessionManager.m */; };
-		A1DC203819CD567C003E102E /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC202519CD567C003E102E /* AFHTTPSessionManager.m */; };
 		A1DC203919CD567C003E102E /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC202819CD567C003E102E /* AFNetworkReachabilityManager.m */; };
-		A1DC203A19CD567C003E102E /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC202819CD567C003E102E /* AFNetworkReachabilityManager.m */; };
 		A1DC203B19CD567C003E102E /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC202A19CD567C003E102E /* AFSecurityPolicy.m */; };
-		A1DC203C19CD567C003E102E /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC202A19CD567C003E102E /* AFSecurityPolicy.m */; };
 		A1DC203D19CD567C003E102E /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC202C19CD567C003E102E /* AFURLConnectionOperation.m */; };
-		A1DC203E19CD567C003E102E /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC202C19CD567C003E102E /* AFURLConnectionOperation.m */; };
 		A1DC203F19CD567C003E102E /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC202E19CD567C003E102E /* AFURLRequestSerialization.m */; };
-		A1DC204019CD567C003E102E /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC202E19CD567C003E102E /* AFURLRequestSerialization.m */; };
 		A1DC204119CD567C003E102E /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC203019CD567C003E102E /* AFURLResponseSerialization.m */; };
-		A1DC204219CD567C003E102E /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC203019CD567C003E102E /* AFURLResponseSerialization.m */; };
 		A1DC204319CD567C003E102E /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC203219CD567C003E102E /* AFURLSessionManager.m */; };
-		A1DC204419CD567C003E102E /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC203219CD567C003E102E /* AFURLSessionManager.m */; };
 		A1DC204819CD56AC003E102E /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC204719CD56AC003E102E /* EGOCache.m */; };
-		A1DC204919CD56AC003E102E /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC204719CD56AC003E102E /* EGOCache.m */; };
 		A1DC205A19CD56C8003E102E /* FICImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC204E19CD56C8003E102E /* FICImageCache.m */; };
-		A1DC205B19CD56C8003E102E /* FICImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC204E19CD56C8003E102E /* FICImageCache.m */; };
 		A1DC205C19CD56C8003E102E /* FICImageFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC205019CD56C8003E102E /* FICImageFormat.m */; };
-		A1DC205D19CD56C8003E102E /* FICImageFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC205019CD56C8003E102E /* FICImageFormat.m */; };
 		A1DC205E19CD56C8003E102E /* FICImageTable.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC205219CD56C8003E102E /* FICImageTable.m */; };
-		A1DC205F19CD56C8003E102E /* FICImageTable.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC205219CD56C8003E102E /* FICImageTable.m */; };
 		A1DC206019CD56C8003E102E /* FICImageTableChunk.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC205419CD56C8003E102E /* FICImageTableChunk.m */; };
-		A1DC206119CD56C8003E102E /* FICImageTableChunk.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC205419CD56C8003E102E /* FICImageTableChunk.m */; };
 		A1DC206219CD56C8003E102E /* FICImageTableEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC205619CD56C8003E102E /* FICImageTableEntry.m */; };
-		A1DC206319CD56C8003E102E /* FICImageTableEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC205619CD56C8003E102E /* FICImageTableEntry.m */; };
 		A1DC206419CD56C8003E102E /* FICUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC205919CD56C8003E102E /* FICUtilities.m */; };
-		A1DC206519CD56C8003E102E /* FICUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC205919CD56C8003E102E /* FICUtilities.m */; };
 		A1DC206B19CD5702003E102E /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC206819CD5702003E102E /* FLAnimatedImage.m */; };
-		A1DC206C19CD5702003E102E /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC206819CD5702003E102E /* FLAnimatedImage.m */; };
 		A1DC206D19CD5702003E102E /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC206A19CD5702003E102E /* FLAnimatedImageView.m */; };
-		A1DC206E19CD5702003E102E /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC206A19CD5702003E102E /* FLAnimatedImageView.m */; };
 		A1DC207B19CD572A003E102E /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC207119CD572A003E102E /* FMDatabase.m */; };
-		A1DC207C19CD572A003E102E /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC207119CD572A003E102E /* FMDatabase.m */; };
 		A1DC207D19CD572A003E102E /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC207319CD572A003E102E /* FMDatabaseAdditions.m */; };
-		A1DC207E19CD572A003E102E /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC207319CD572A003E102E /* FMDatabaseAdditions.m */; };
 		A1DC207F19CD572A003E102E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC207519CD572A003E102E /* FMDatabasePool.m */; };
-		A1DC208019CD572A003E102E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC207519CD572A003E102E /* FMDatabasePool.m */; };
 		A1DC208119CD572A003E102E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC207719CD572A003E102E /* FMDatabaseQueue.m */; };
-		A1DC208219CD572A003E102E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC207719CD572A003E102E /* FMDatabaseQueue.m */; };
 		A1DC208319CD572A003E102E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC207A19CD572A003E102E /* FMResultSet.m */; };
-		A1DC208419CD572A003E102E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC207A19CD572A003E102E /* FMResultSet.m */; };
 		A1DC20A019CD57BF003E102E /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC208919CD57BF003E102E /* JSONModel.m */; };
-		A1DC20A119CD57BF003E102E /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC208919CD57BF003E102E /* JSONModel.m */; };
 		A1DC20A219CD57BF003E102E /* JSONModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC208B19CD57BF003E102E /* JSONModelArray.m */; };
-		A1DC20A319CD57BF003E102E /* JSONModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC208B19CD57BF003E102E /* JSONModelArray.m */; };
 		A1DC20A419CD57BF003E102E /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC208D19CD57BF003E102E /* JSONModelClassProperty.m */; };
-		A1DC20A519CD57BF003E102E /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC208D19CD57BF003E102E /* JSONModelClassProperty.m */; };
 		A1DC20A619CD57BF003E102E /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC208F19CD57BF003E102E /* JSONModelError.m */; };
-		A1DC20A719CD57BF003E102E /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC208F19CD57BF003E102E /* JSONModelError.m */; };
 		A1DC20A819CD57BF003E102E /* NSArray+JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC209219CD57BF003E102E /* NSArray+JSONModel.m */; };
-		A1DC20A919CD57BF003E102E /* NSArray+JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC209219CD57BF003E102E /* NSArray+JSONModel.m */; };
 		A1DC20AA19CD57BF003E102E /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC209619CD57BF003E102E /* JSONAPI.m */; };
-		A1DC20AB19CD57BF003E102E /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC209619CD57BF003E102E /* JSONAPI.m */; };
 		A1DC20AC19CD57BF003E102E /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC209819CD57BF003E102E /* JSONHTTPClient.m */; };
-		A1DC20AD19CD57BF003E102E /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC209819CD57BF003E102E /* JSONHTTPClient.m */; };
 		A1DC20AE19CD57BF003E102E /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC209A19CD57BF003E102E /* JSONModel+networking.m */; };
-		A1DC20AF19CD57BF003E102E /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC209A19CD57BF003E102E /* JSONModel+networking.m */; };
 		A1DC20B019CD57BF003E102E /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC209D19CD57BF003E102E /* JSONKeyMapper.m */; };
-		A1DC20B119CD57BF003E102E /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC209D19CD57BF003E102E /* JSONKeyMapper.m */; };
 		A1DC20B219CD57BF003E102E /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC209F19CD57BF003E102E /* JSONValueTransformer.m */; };
-		A1DC20B319CD57BF003E102E /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC209F19CD57BF003E102E /* JSONValueTransformer.m */; };
 		A1DC212919CD584E003E102E /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC210919CD584E003E102E /* MKAnnotationView+WebCache.m */; };
-		A1DC212A19CD584E003E102E /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC210919CD584E003E102E /* MKAnnotationView+WebCache.m */; };
 		A1DC212B19CD584E003E102E /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC210B19CD584E003E102E /* NSData+ImageContentType.m */; };
-		A1DC212C19CD584E003E102E /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC210B19CD584E003E102E /* NSData+ImageContentType.m */; };
 		A1DC212D19CD584E003E102E /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC210D19CD584E003E102E /* SDImageCache.m */; };
-		A1DC212E19CD584E003E102E /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC210D19CD584E003E102E /* SDImageCache.m */; };
 		A1DC212F19CD584E003E102E /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC210F19CD584E003E102E /* SDWebImageCompat.m */; };
-		A1DC213019CD584E003E102E /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC210F19CD584E003E102E /* SDWebImageCompat.m */; };
 		A1DC213119CD584E003E102E /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC211119CD584E003E102E /* SDWebImageDecoder.m */; };
-		A1DC213219CD584E003E102E /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC211119CD584E003E102E /* SDWebImageDecoder.m */; };
 		A1DC213319CD584E003E102E /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC211319CD584E003E102E /* SDWebImageDownloader.m */; };
-		A1DC213419CD584E003E102E /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC211319CD584E003E102E /* SDWebImageDownloader.m */; };
 		A1DC213519CD584E003E102E /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC211519CD584E003E102E /* SDWebImageDownloaderOperation.m */; };
-		A1DC213619CD584E003E102E /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC211519CD584E003E102E /* SDWebImageDownloaderOperation.m */; };
 		A1DC213719CD584E003E102E /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC211719CD584E003E102E /* SDWebImageManager.m */; };
-		A1DC213819CD584E003E102E /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC211719CD584E003E102E /* SDWebImageManager.m */; };
 		A1DC213919CD584E003E102E /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC211A19CD584E003E102E /* SDWebImagePrefetcher.m */; };
-		A1DC213A19CD584E003E102E /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC211A19CD584E003E102E /* SDWebImagePrefetcher.m */; };
 		A1DC213B19CD584E003E102E /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC211C19CD584E003E102E /* UIButton+WebCache.m */; };
-		A1DC213C19CD584E003E102E /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC211C19CD584E003E102E /* UIButton+WebCache.m */; };
 		A1DC213D19CD584E003E102E /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC211E19CD584E003E102E /* UIImage+GIF.m */; };
-		A1DC213E19CD584E003E102E /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC211E19CD584E003E102E /* UIImage+GIF.m */; };
 		A1DC213F19CD584E003E102E /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC212019CD584E003E102E /* UIImage+MultiFormat.m */; };
-		A1DC214019CD584E003E102E /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC212019CD584E003E102E /* UIImage+MultiFormat.m */; };
 		A1DC214119CD584E003E102E /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC212219CD584E003E102E /* UIImage+WebP.m */; };
-		A1DC214219CD584E003E102E /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC212219CD584E003E102E /* UIImage+WebP.m */; };
 		A1DC214319CD584E003E102E /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC212419CD584E003E102E /* UIImageView+HighlightedWebCache.m */; };
-		A1DC214419CD584E003E102E /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC212419CD584E003E102E /* UIImageView+HighlightedWebCache.m */; };
 		A1DC214519CD584E003E102E /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC212619CD584E003E102E /* UIImageView+WebCache.m */; };
-		A1DC214619CD584E003E102E /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC212619CD584E003E102E /* UIImageView+WebCache.m */; };
 		A1DC214719CD584E003E102E /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC212819CD584E003E102E /* UIView+WebCacheOperation.m */; };
-		A1DC214819CD584E003E102E /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC212819CD584E003E102E /* UIView+WebCacheOperation.m */; };
 		A1DC215019CD585C003E102E /* TMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC214B19CD585C003E102E /* TMCache.m */; };
-		A1DC215119CD585C003E102E /* TMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC214B19CD585C003E102E /* TMCache.m */; };
 		A1DC215219CD585C003E102E /* TMDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC214D19CD585C003E102E /* TMDiskCache.m */; };
-		A1DC215319CD585C003E102E /* TMDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC214D19CD585C003E102E /* TMDiskCache.m */; };
 		A1DC215419CD585C003E102E /* TMMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC214F19CD585C003E102E /* TMMemoryCache.m */; };
-		A1DC215519CD585C003E102E /* TMMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC214F19CD585C003E102E /* TMMemoryCache.m */; };
 		A1DC215919CD59D2003E102E /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC215819CD59D2003E102E /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A1DC215A19CD59D2003E102E /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC215819CD59D2003E102E /* JSONKit.m */; };
 		A1DC216719CD60DE003E102E /* QBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC216619CD60DE003E102E /* QBaseRequest.m */; };
-		A1DC216819CD60DE003E102E /* QBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC216619CD60DE003E102E /* QBaseRequest.m */; };
-		A1DC217A19CD7CFF003E102E /* QBaseTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC217919CD7CFF003E102E /* QBaseTestModel.m */; };
-		A1DC217B19CD7CFF003E102E /* QBaseTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DC217919CD7CFF003E102E /* QBaseTestModel.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A1DC1BA219CD53D0003E102E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1DC1B7A19CD53D0003E102E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A1DC1B8119CD53D0003E102E;
-			remoteInfo = QBaseFramework;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A10F428119E7EE5600F0A0B8 /* QBaseCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseCache.h; sourceTree = "<group>"; };
@@ -155,6 +86,12 @@
 		A10F428B19E7F38E00F0A0B8 /* QBaseVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBaseVendor.h; path = ../../src/QBaseVendor.h; sourceTree = "<group>"; };
 		A10F42A119E8D97C00F0A0B8 /* QBaseSqlHanldler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseSqlHanldler.h; sourceTree = "<group>"; };
 		A10F42A219E8D97C00F0A0B8 /* QBaseSqlHanldler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseSqlHanldler.m; sourceTree = "<group>"; };
+		A1AC6BFA19EA308D0075FA53 /* QBaseViewController+KeyBoardObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QBaseViewController+KeyBoardObserver.h"; sourceTree = "<group>"; };
+		A1AC6BFB19EA308D0075FA53 /* QBaseViewController+KeyBoardObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QBaseViewController+KeyBoardObserver.m"; sourceTree = "<group>"; };
+		A1AC6BFC19EA308D0075FA53 /* QBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseViewController.h; sourceTree = "<group>"; };
+		A1AC6BFD19EA308D0075FA53 /* QBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseViewController.m; sourceTree = "<group>"; };
+		A1AC6C0119EA31190075FA53 /* QBaseViewControllerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBaseViewControllerHeader.h; path = ../../src/mvc/controller/QBaseViewControllerHeader.h; sourceTree = "<group>"; };
+		A1AC6C0319EA31860075FA53 /* QBaseMVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBaseMVC.h; path = ../../src/mvc/QBaseMVC.h; sourceTree = "<group>"; };
 		A1C8F6C619D126AE00C94571 /* QBaseFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBaseFramework.h; path = ../../src/QBaseFramework.h; sourceTree = "<group>"; };
 		A1DC1B8219CD53D0003E102E /* QBaseFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBaseFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DC1B8519CD53D0003E102E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -167,11 +104,7 @@
 		A1DC1B9419CD53D0003E102E /* QBaseAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QBaseAppDelegate.h; sourceTree = "<group>"; };
 		A1DC1B9519CD53D0003E102E /* QBaseAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBaseAppDelegate.m; sourceTree = "<group>"; };
 		A1DC1B9719CD53D0003E102E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A1DC1B9D19CD53D0003E102E /* QBaseFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QBaseFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DC1B9E19CD53D0003E102E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		A1DC1BA619CD53D0003E102E /* QBaseFrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QBaseFrameworkTests-Info.plist"; sourceTree = "<group>"; };
-		A1DC1BA819CD53D0003E102E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A1DC1BAA19CD53D0003E102E /* QBaseFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBaseFrameworkTests.m; sourceTree = "<group>"; };
 		A1DC201C19CD553E003E102E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		A1DC202019CD567C003E102E /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		A1DC202119CD567C003E102E /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
@@ -290,8 +223,6 @@
 		A1DC216519CD60DE003E102E /* QBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseRequest.h; sourceTree = "<group>"; };
 		A1DC216619CD60DE003E102E /* QBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseRequest.m; sourceTree = "<group>"; };
 		A1DC217719CD7C91003E102E /* QBaseSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseSystem.h; sourceTree = "<group>"; };
-		A1DC217819CD7CFF003E102E /* QBaseTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBaseTestModel.h; sourceTree = "<group>"; };
-		A1DC217919CD7CFF003E102E /* QBaseTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBaseTestModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,16 +234,6 @@
 				A1DC1B8819CD53D0003E102E /* CoreGraphics.framework in Frameworks */,
 				A1DC1B8A19CD53D0003E102E /* UIKit.framework in Frameworks */,
 				A1DC1B8619CD53D0003E102E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1DC1B9A19CD53D0003E102E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1DC1B9F19CD53D0003E102E /* XCTest.framework in Frameworks */,
-				A1DC1BA119CD53D0003E102E /* UIKit.framework in Frameworks */,
-				A1DC1BA019CD53D0003E102E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,12 +270,49 @@
 			path = QBaseSqlHanldler;
 			sourceTree = "<group>";
 		};
+		A1AC6BF519EA30650075FA53 /* mvc */ = {
+			isa = PBXGroup;
+			children = (
+				A1AC6C0319EA31860075FA53 /* QBaseMVC.h */,
+				A1AC6BF719EA307C0075FA53 /* controller */,
+			);
+			name = mvc;
+			sourceTree = "<group>";
+		};
+		A1AC6BF719EA307C0075FA53 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				A1AC6C0119EA31190075FA53 /* QBaseViewControllerHeader.h */,
+				A1AC6BF819EA308D0075FA53 /* QBaseViewController */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		A1AC6BF819EA308D0075FA53 /* QBaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A1AC6BF919EA308D0075FA53 /* extension */,
+				A1AC6BFC19EA308D0075FA53 /* QBaseViewController.h */,
+				A1AC6BFD19EA308D0075FA53 /* QBaseViewController.m */,
+			);
+			name = QBaseViewController;
+			path = ../../src/mvc/controller/QBaseViewController;
+			sourceTree = "<group>";
+		};
+		A1AC6BF919EA308D0075FA53 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				A1AC6BFA19EA308D0075FA53 /* QBaseViewController+KeyBoardObserver.h */,
+				A1AC6BFB19EA308D0075FA53 /* QBaseViewController+KeyBoardObserver.m */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 		A1DC1B7919CD53D0003E102E = {
 			isa = PBXGroup;
 			children = (
 				A1DC215C19CD5E1E003E102E /* src */,
 				A1DC1B8B19CD53D0003E102E /* QBaseFramework */,
-				A1DC1BA419CD53D0003E102E /* QBaseFrameworkTests */,
 				A1DC1B8419CD53D0003E102E /* Frameworks */,
 				A1DC1B8319CD53D0003E102E /* Products */,
 			);
@@ -364,7 +322,6 @@
 			isa = PBXGroup;
 			children = (
 				A1DC1B8219CD53D0003E102E /* QBaseFramework.app */,
-				A1DC1B9D19CD53D0003E102E /* QBaseFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -386,8 +343,6 @@
 			children = (
 				A1DC1B9419CD53D0003E102E /* QBaseAppDelegate.h */,
 				A1DC1B9519CD53D0003E102E /* QBaseAppDelegate.m */,
-				A1DC217819CD7CFF003E102E /* QBaseTestModel.h */,
-				A1DC217919CD7CFF003E102E /* QBaseTestModel.m */,
 				A1DC1B9719CD53D0003E102E /* Images.xcassets */,
 				A1DC1B8C19CD53D0003E102E /* Supporting Files */,
 			);
@@ -401,24 +356,6 @@
 				A1DC1B8E19CD53D0003E102E /* InfoPlist.strings */,
 				A1DC1B9119CD53D0003E102E /* main.m */,
 				A1DC1B9319CD53D0003E102E /* QBaseFramework-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A1DC1BA419CD53D0003E102E /* QBaseFrameworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				A1DC1BAA19CD53D0003E102E /* QBaseFrameworkTests.m */,
-				A1DC1BA519CD53D0003E102E /* Supporting Files */,
-			);
-			path = QBaseFrameworkTests;
-			sourceTree = "<group>";
-		};
-		A1DC1BA519CD53D0003E102E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A1DC1BA619CD53D0003E102E /* QBaseFrameworkTests-Info.plist */,
-				A1DC1BA719CD53D0003E102E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -660,6 +597,7 @@
 				A10F428A19E7F38E00F0A0B8 /* QBasePrecompile.h */,
 				A10F428B19E7F38E00F0A0B8 /* QBaseVendor.h */,
 				A1C8F6C619D126AE00C94571 /* QBaseFramework.h */,
+				A1AC6BF519EA30650075FA53 /* mvc */,
 				A1DC215D19CD5E99003E102E /* system */,
 				A1DC201E19CD562C003E102E /* vendor */,
 			);
@@ -723,24 +661,6 @@
 			productReference = A1DC1B8219CD53D0003E102E /* QBaseFramework.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A1DC1B9C19CD53D0003E102E /* QBaseFrameworkTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A1DC1BB119CD53D0003E102E /* Build configuration list for PBXNativeTarget "QBaseFrameworkTests" */;
-			buildPhases = (
-				A1DC1B9919CD53D0003E102E /* Sources */,
-				A1DC1B9A19CD53D0003E102E /* Frameworks */,
-				A1DC1B9B19CD53D0003E102E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A1DC1BA319CD53D0003E102E /* PBXTargetDependency */,
-			);
-			name = QBaseFrameworkTests;
-			productName = QBaseFrameworkTests;
-			productReference = A1DC1B9D19CD53D0003E102E /* QBaseFrameworkTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -750,11 +670,6 @@
 				CLASSPREFIX = QBase;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = streakq;
-				TargetAttributes = {
-					A1DC1B9C19CD53D0003E102E = {
-						TestTargetID = A1DC1B8119CD53D0003E102E;
-					};
-				};
 			};
 			buildConfigurationList = A1DC1B7D19CD53D0003E102E /* Build configuration list for PBXProject "QBaseFramework" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -770,7 +685,6 @@
 			projectRoot = "";
 			targets = (
 				A1DC1B8119CD53D0003E102E /* QBaseFramework */,
-				A1DC1B9C19CD53D0003E102E /* QBaseFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -782,14 +696,6 @@
 			files = (
 				A1DC1B9019CD53D0003E102E /* InfoPlist.strings in Resources */,
 				A1DC1B9819CD53D0003E102E /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1DC1B9B19CD53D0003E102E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1DC1BA919CD53D0003E102E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -810,13 +716,13 @@
 				A1DC203B19CD567C003E102E /* AFSecurityPolicy.m in Sources */,
 				A1DC207F19CD572A003E102E /* FMDatabasePool.m in Sources */,
 				A1DC207B19CD572A003E102E /* FMDatabase.m in Sources */,
+				A1AC6BFE19EA308D0075FA53 /* QBaseViewController+KeyBoardObserver.m in Sources */,
 				A1DC206419CD56C8003E102E /* FICUtilities.m in Sources */,
 				A1DC205A19CD56C8003E102E /* FICImageCache.m in Sources */,
 				A1DC203319CD567C003E102E /* AFHTTPRequestOperation.m in Sources */,
 				A1DC213719CD584E003E102E /* SDWebImageManager.m in Sources */,
 				A1DC214519CD584E003E102E /* UIImageView+WebCache.m in Sources */,
 				A1DC207D19CD572A003E102E /* FMDatabaseAdditions.m in Sources */,
-				A1DC217A19CD7CFF003E102E /* QBaseTestModel.m in Sources */,
 				A1DC20A019CD57BF003E102E /* JSONModel.m in Sources */,
 				A1DC206019CD56C8003E102E /* FICImageTableChunk.m in Sources */,
 				A1DC212919CD584E003E102E /* MKAnnotationView+WebCache.m in Sources */,
@@ -834,6 +740,7 @@
 				A1DC214119CD584E003E102E /* UIImage+WebP.m in Sources */,
 				A1DC213319CD584E003E102E /* SDWebImageDownloader.m in Sources */,
 				A1DC1B9219CD53D0003E102E /* main.m in Sources */,
+				A1AC6BFF19EA308D0075FA53 /* QBaseViewController.m in Sources */,
 				A1DC215419CD585C003E102E /* TMMemoryCache.m in Sources */,
 				A1DC203719CD567C003E102E /* AFHTTPSessionManager.m in Sources */,
 				A1DC208119CD572A003E102E /* FMDatabaseQueue.m in Sources */,
@@ -863,92 +770,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1DC1B9919CD53D0003E102E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1DC213219CD584E003E102E /* SDWebImageDecoder.m in Sources */,
-				A1DC213819CD584E003E102E /* SDWebImageManager.m in Sources */,
-				A1DC206E19CD5702003E102E /* FLAnimatedImageView.m in Sources */,
-				A1DC203E19CD567C003E102E /* AFURLConnectionOperation.m in Sources */,
-				A1DC204219CD567C003E102E /* AFURLResponseSerialization.m in Sources */,
-				A1DC207C19CD572A003E102E /* FMDatabase.m in Sources */,
-				A1DC215119CD585C003E102E /* TMCache.m in Sources */,
-				A1DC203419CD567C003E102E /* AFHTTPRequestOperation.m in Sources */,
-				A1DC208019CD572A003E102E /* FMDatabasePool.m in Sources */,
-				A1DC212A19CD584E003E102E /* MKAnnotationView+WebCache.m in Sources */,
-				A1DC208419CD572A003E102E /* FMResultSet.m in Sources */,
-				A1DC207E19CD572A003E102E /* FMDatabaseAdditions.m in Sources */,
-				A1DC214219CD584E003E102E /* UIImage+WebP.m in Sources */,
-				A1DC20AB19CD57BF003E102E /* JSONAPI.m in Sources */,
-				A1DC212E19CD584E003E102E /* SDImageCache.m in Sources */,
-				A1DC20A719CD57BF003E102E /* JSONModelError.m in Sources */,
-				A1DC205B19CD56C8003E102E /* FICImageCache.m in Sources */,
-				A1DC214019CD584E003E102E /* UIImage+MultiFormat.m in Sources */,
-				A1DC214419CD584E003E102E /* UIImageView+HighlightedWebCache.m in Sources */,
-				A1DC215319CD585C003E102E /* TMDiskCache.m in Sources */,
-				A1DC215A19CD59D2003E102E /* JSONKit.m in Sources */,
-				A1DC1BAB19CD53D0003E102E /* QBaseFrameworkTests.m in Sources */,
-				A1DC203A19CD567C003E102E /* AFNetworkReachabilityManager.m in Sources */,
-				A1DC204419CD567C003E102E /* AFURLSessionManager.m in Sources */,
-				A1DC213E19CD584E003E102E /* UIImage+GIF.m in Sources */,
-				A1DC213019CD584E003E102E /* SDWebImageCompat.m in Sources */,
-				A1DC206119CD56C8003E102E /* FICImageTableChunk.m in Sources */,
-				A1DC20B119CD57BF003E102E /* JSONKeyMapper.m in Sources */,
-				A1DC20AF19CD57BF003E102E /* JSONModel+networking.m in Sources */,
-				A1DC20B319CD57BF003E102E /* JSONValueTransformer.m in Sources */,
-				A1DC213619CD584E003E102E /* SDWebImageDownloaderOperation.m in Sources */,
-				A1DC208219CD572A003E102E /* FMDatabaseQueue.m in Sources */,
-				A1DC206C19CD5702003E102E /* FLAnimatedImage.m in Sources */,
-				A1DC203619CD567C003E102E /* AFHTTPRequestOperationManager.m in Sources */,
-				A1DC20AD19CD57BF003E102E /* JSONHTTPClient.m in Sources */,
-				A1DC206519CD56C8003E102E /* FICUtilities.m in Sources */,
-				A1DC20A919CD57BF003E102E /* NSArray+JSONModel.m in Sources */,
-				A1DC205D19CD56C8003E102E /* FICImageFormat.m in Sources */,
-				A1DC203C19CD567C003E102E /* AFSecurityPolicy.m in Sources */,
-				A1DC214619CD584E003E102E /* UIImageView+WebCache.m in Sources */,
-				A1DC20A119CD57BF003E102E /* JSONModel.m in Sources */,
-				A1DC214819CD584E003E102E /* UIView+WebCacheOperation.m in Sources */,
-				A1DC20A519CD57BF003E102E /* JSONModelClassProperty.m in Sources */,
-				A1DC213A19CD584E003E102E /* SDWebImagePrefetcher.m in Sources */,
-				A1DC204919CD56AC003E102E /* EGOCache.m in Sources */,
-				A1DC212C19CD584E003E102E /* NSData+ImageContentType.m in Sources */,
-				A1DC205F19CD56C8003E102E /* FICImageTable.m in Sources */,
-				A1DC203819CD567C003E102E /* AFHTTPSessionManager.m in Sources */,
-				A1DC206319CD56C8003E102E /* FICImageTableEntry.m in Sources */,
-				A1DC204019CD567C003E102E /* AFURLRequestSerialization.m in Sources */,
-				A1DC215519CD585C003E102E /* TMMemoryCache.m in Sources */,
-				A1DC213C19CD584E003E102E /* UIButton+WebCache.m in Sources */,
-				A1DC213419CD584E003E102E /* SDWebImageDownloader.m in Sources */,
-				A1DC20A319CD57BF003E102E /* JSONModelArray.m in Sources */,
-				A1DC216819CD60DE003E102E /* QBaseRequest.m in Sources */,
-				A1DC217B19CD7CFF003E102E /* QBaseTestModel.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A1DC1BA319CD53D0003E102E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A1DC1B8119CD53D0003E102E /* QBaseFramework */;
-			targetProxy = A1DC1BA219CD53D0003E102E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A1DC1B8E19CD53D0003E102E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A1DC1B8F19CD53D0003E102E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A1DC1BA719CD53D0003E102E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A1DC1BA819CD53D0003E102E /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1060,46 +888,6 @@
 			};
 			name = Release;
 		};
-		A1DC1BB219CD53D0003E102E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QBaseFramework.app/QBaseFramework";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "QBaseFramework/QBaseFramework-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "QBaseFrameworkTests/QBaseFrameworkTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		A1DC1BB319CD53D0003E102E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QBaseFramework.app/QBaseFramework";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "QBaseFramework/QBaseFramework-Prefix.pch";
-				INFOPLIST_FILE = "QBaseFrameworkTests/QBaseFrameworkTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1117,15 +905,6 @@
 			buildConfigurations = (
 				A1DC1BAF19CD53D0003E102E /* Debug */,
 				A1DC1BB019CD53D0003E102E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A1DC1BB119CD53D0003E102E /* Build configuration list for PBXNativeTarget "QBaseFrameworkTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A1DC1BB219CD53D0003E102E /* Debug */,
-				A1DC1BB319CD53D0003E102E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

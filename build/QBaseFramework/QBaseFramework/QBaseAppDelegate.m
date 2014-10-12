@@ -7,28 +7,13 @@
 //
 
 #import "QBaseAppDelegate.h"
-#import "QBaseTestModel.h"
+
 @implementation QBaseAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-
     
-    NSDictionary *params =
-                        @{
-                          @"meap_id" :   @(1),
-                          @"name"    :   @"Andy Jin",
-                          @"age"     :   @(18)
-                          };
-    
-    QBaseTestModel *m = [[QBaseTestModel alloc] initWithDictionary:params error:nil];
-    
-    [m createTable];
-    
-    [m insertTable];
-    
-    [m updateTable];
     
     
     

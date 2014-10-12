@@ -37,3 +37,6 @@
 [submodule "src/vendor/Reachability"]
 	path = src/vendor/Reachability
 	url = git@github.com:tonymillion/Reachability.git
+[submodule "src/mvc/controller/QBaseViewController"]
+	path = src/mvc/controller/QBaseViewController
+	url = git@github.com:QBaseFramework/QBaseViewController.git

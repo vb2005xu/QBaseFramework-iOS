@@ -12,4 +12,5 @@
 #import "QBasePrecompile.h"
 #import "QBaseVendor.h"
 #import "QBaseSystem.h"
+#import "QBaseMVC.h"
 #endif
